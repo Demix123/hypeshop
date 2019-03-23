@@ -1,0 +1,294 @@
+html{
+    max-width: 100%;
+    scroll-behavior: smooth;
+}
+
+.header{
+    background: #DEDEDE;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.header nav .navbar-brand img{
+    width: 80px;
+    height: 80px;
+}
+
+nav .nav-link:hover{
+    padding-top: 2px;
+    color: black;
+    background: lightgray;
+    border-radius: 5px; 
+}
+
+.header .navbar-brand:hover{
+    color: black;
+}
+
+.header .navbar-brand:nth-child(2){
+    font-size: 30px;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.header ul li:last-child{
+    padding-left: 70px;
+}
+
+.header nav{
+    font-size: 20px;
+}
+
+.header nav ul li{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 1200px){
+    .header nav{
+        font-size: 18px;
+    }
+    .header .navbar-brand:nth-child(2){
+        font-size: 20px;
+    }
+    .header nav .navbar-brand img{
+        width: 50;
+        height: 50;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .header ul li:last-child{
+        padding-left: 0px;
+    }
+    nav .nav-link:hover{
+        padding-left: 10px;
+        padding-top: 0px !important;
+    }
+    .header nav ul li{
+        font-size: 20px;
+    }
+}
+
+.arrivals-1{
+    background: #247094;
+    height: 450px;
+    position: relative;
+}
+
+.arrivals-1 .container, .arrivals-2 .container{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 150px;
+}
+
+.arrivals-1 .container h2, .arrivals-2 .container h2{
+    font-weight: bold;
+    font-size: 55px;
+    color: white;
+}
+
+.arrivals-1 .container h3, .arrivals-2 .container h3{
+    padding-top: 3px;
+    color: white;
+    font-size: 25px;
+}
+
+.arrivals-1 .container button, .arrivals-2 .container button{
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    background: white;
+    border: none;
+    border-radius: 13px;
+    width: 150px;
+    height: 40px;
+}
+
+.arrivals-1 .container p, .arrivals-2 .container p{
+    color: white;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.arrivals-1 .container img{
+    max-width: 600px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+}
+
+.arrivals-2{
+    background: #F3A668;
+    height: 450px;
+    position: relative;
+}
+
+.arrivals-2 .container img{
+    max-width: 600px;
+    margin-top: -70px;
+}
+
+.arrivals-2 .container .arrivals-2Content{
+    position: absolute;
+    right: 15%;
+    top: 30%;
+}
+
+.popular-shoes{
+    background: #EEEBE2;
+    padding-top: 70px;
+}
+
+.popular-shoes .shoes-item{
+    height: 300px !important;
+    position: relative;
+    padding-right: 150px;
+}
+
+.popular-shoes .shoes-item, .popular-shoes .shoes-item img{
+    padding-top: 60px;
+}
+
+.popular-shoes .shoes-item img{
+    position: absolute;
+    right: 10%;
+    top: 0;
+    padding-left: 50px;
+    min-width: 250px;
+}
+
+.popular-shoes .container{
+    margin-left: 50% - width;
+    text-align: center;
+}
+
+.popular-shoes .shoes-item button{
+    margin-top: 20px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    background: #F3A668;
+    border: none;
+    border-radius: 13px;
+    width: 150px;
+    height: 40px;
+}
+
+.popular-shoes .carousel-item .shoes-item h3{
+    font-size: 35px;
+}
+
+.popular-shoes .carousel-item .shoes-item span{
+    font-size: 23px;
+}
+
+.popular-shoes .carousel-item .shoes-item p{
+    font-size: 20px;
+}
+
+.popular-shoes .carousel-item .shoes-item h3, .popular-shoes .carousel-item .shoes-item button, .popular-shoes .carousel-item .shoes-item p{
+    margin-left: -20%;
+}
+
+.carousel-indicators li{
+    color: black;
+}
+
+.popular-shoes .container a i{
+    color: darkgray;
+    font-size: 50px;
+}
+
+.categories{
+    background: #F3F3F3;
+}
+
+.categories .container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.categories .container .col{
+    background: white;
+    position: relative;
+    height: 350px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.categories .container .col .category-item img{
+    margin-top: 60px;
+}
+
+.categories .container a{
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.categories .container h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer{
+    background: #DEDEDE;
+}
+
+footer .container .connect{
+    text-align: center;
+}
+
+footer .container .connect h3{
+    font-size: 40px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+footer .container .connect .connect-item a{
+    text-decoration: none;
+    color: #747474;
+}
+
+footer .container .connect .connect-item a:nth-child(2){
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+footer .container .connect .connect-item{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+footer .container .connect .gmail p{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+footer .container .connect .gmail p span{
+    font-weight: bold;
+}
+
+footer .container .copyright{
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+footer .copyright p{
+    margin: 0;
+    padding: 20px;
+  }
+
+footer .container .connect .connect-item a:hover{
+    color: #1E66D8; 
+}
+
+footer .container .connect .connect-item a:nth-child(2):hover{
+    color: #EE9490;
+}
