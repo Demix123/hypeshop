@@ -355,7 +355,8 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
 .arrival-container .all-photo, .arrival-container .info{
     max-width: 40%;
-    display: flex;
+
+    
 }
 
 .more-info{
