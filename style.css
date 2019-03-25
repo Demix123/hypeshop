@@ -1,5 +1,8 @@
-html{
+body{
     max-width: 100%;
+}
+
+html{
     scroll-behavior: smooth;
 }
 
@@ -291,4 +294,176 @@ footer .container .connect .connect-item a:hover{
 
 footer .container .connect .connect-item a:nth-child(2):hover{
     color: #EE9490;
+}
+
+.bph{
+    padding-top: 30px;
+}
+
+.small img{
+    max-width: 95px;
+    margin: 1px;
+    margin-top: 5px;
+}
+
+.arrival-container .all-photo{
+    box-sizing: border-box;
+}
+
+.arrival-col .green{
+    color: lightgreen;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.arrival-col .amazed{
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.arrival-col #price{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.arrival-col .quanity{
+    margin-bottom: 0px;
+}
+
+.arrival-col .btn{
+    padding-left: 0px;
+}
+
+.arrival-col .btn input[type=number]{
+    height: 60px;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.arrival-col .btn input[type=submit]{
+    height: 60px;
+    width: 170px;
+    background-color: blue;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.arrival-container .all-photo, .arrival-container .info{
+    max-width: 40%;
+    display: flex;
+}
+
+.more-info{
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.more-info h2{
+    color: #2C2C6C;
+    padding-bottom: 20px;
+}
+
+.more-info .row:nth-child(2n) {
+    background: lightgray;
+}
+
+.prop, .value {
+    display: inline-block;
+    line-height: 3em;
+    padding-left: 10px;
+}
+
+.more-info .prop {
+    width: 30%;
+    border-right: 1px solid darkgray;
+    font-weight: bold;
+}
+
+.small img:hover{
+    transform: scale(2);
+    transition: all 0.7s;
+}
+
+#modal_form {
+    width: 500px; 
+    height: 450px;
+    border-radius: 5px;
+    background: #fff;
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    display: none;
+    z-index: 5;
+    padding: 20px 10px;
+}
+
+#modal_form #modal_close {
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+}
+
+#overlay {
+    z-index:3;
+    position:fixed;
+    background-color:#000;
+    opacity:0.5;
+    width:100%; 
+    height:100%;
+    top:0;
+    left:0;
+    cursor:pointer;
+    display:none;
+}
+
+#modal_form form, #modal_form form>* {
+    width: 100%!important;
+}
+
+#modal_form form>input[type=checkbox], #modal_form form>input[type=radio]{
+    display: flex;
+    align-items: center;
+}
+
+#modal_form label{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#modal_form label[for=name], #modal_form label[for=email]{
+    margin-bottom: -10px;
+}
+
+#modal_form input{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal_form label[for=pay-way]{
+    margin-bottom: 5px;
+}
+
+#modal_form input[type=submit]{
+    margin-top: 30px !important;
+    border: 1px solid rgb(190, 184, 184);
+    height: 50px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: rgb(59, 59, 59);
+}
+
+#modal_form form{
+    margin-top: 20px;
 }

@@ -12,9 +12,9 @@
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="images/nav-img.png" class="d-inline-block align-top" alt="brand-img">
-                    <a class="navbar-brand" href="#">KrosShop</a>
+                    <a class="navbar-brand" href="index.html">KrosShop</a>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
                 <div class="collapse navbar-collapse" id="navbar1">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Новинки</a>
+                        <a class="nav-link" href="https://krosshop.herokuapp.com/index.html#Новинки">Новинки</a>
                     </li>
                     <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Популярні моделі</a>
+                            <a class="nav-link" href="https://krosshop.herokuapp.com/index.html#Популярні_моделі">Популярні моделі</a>
                     </li>
                     <li class="nav-item active">
-                            <a class="nav-link" href="#Категорії">Категорії</a>
+                            <a class="nav-link" href="https://krosshop.herokuapp.com/index.html#Категорії">Категорії</a>
                     </li>
                     <li class="nav-item active">
-                            <a class="nav-link" href="#Про_нас">Про нас</a>
+                            <a class="nav-link" href="https://krosshop.herokuapp.com/index.html#Про_нас">Про нас</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">&#128722; Корзина</a>
@@ -42,54 +42,79 @@
             </nav>
         </div>
     </div>
-    <div class="col">
-        <div class="container">
-            <div class="bph">
-                <img src="images/arrival-1/arrival1-item2.jpg" alt="Microwave" width="400px">
-            </div>
-            <div class="small">
-                <img src="images/arrival-1/arrival1-item1.jpg" alt="Microwave" width='90px'>
-                <img src="images/arrival-1/arrival1-item5.jpg" alt="Microwave" width='90px'>
-                <img src="images/arrival-1/arrival1-item4.jpg" alt="Microwave" width='90px'>
-                <img src="images/arrival-1/arrival1-item3.jpg" alt="Microwave" width='90px'>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="container">
-            <p class="green">В наявності</p>
-            <h1>Off-White x Nike blazer mid</h1>
-            <p class="value">Ви будете вражені їхньою вишуканістю якістю</p>
-            <h2 id="price">Ціна 1449грн</h2>
-            <p><strong>Кількість</strong>:</p>
-            <div class="btn">
-                <form action="form.php">
-                    <input type="number" placeholder="0">
-                    <input type="submit" class="submit" value="Додати в корзину">
-                </form>
+    <div class="col arrival-col">
+        <div class="container arrival-container">
+            <div class="all-photo">
+                <div class="bph">
+                    <img src="images/arrival-1/arrival1-item2.jpg" alt="Microwave" width="400px">
+                </div>
+                <div class="small">
+                    <img src="images/arrival-1/arrival1-item1.jpg" alt="Microwave">
+                    <img src="images/arrival-1/arrival1-item5.jpg" alt="Microwave">
+                    <img src="images/arrival-1/arrival1-item4.jpg" alt="Microwave">
+                    <img src="images/arrival-1/arrival1-item3.jpg" alt="Microwave">
+                </div>
             </div>
         </div>
     </div>
-    <div class="more-info">
-        <h2>Більше інформації</h2>
-        <div class="someprop">
-            <div class="prop"><span>Виробник</span></div>
-            <div class="value">В'єтнам</div>
-        </div>
-        <div class="someprop">
-            <div class="prop"><span>Матеріал</span></div>
-            <div class="value">Кожа, текстиль</div>
-        </div>
-        <div class="someprop">
-            <div class="prop"><span>Сезон</span></div>
-            <div class="value">Весна, осінь</div>
-        </div>
-        <div class="someprop">
-            <div class="prop"><span>Розміри</span></div>
-            <div class="value">41-45</div>
+    <div class="col arrival-col">
+        <div class="container arrival-container">
+            <div class="info">
+                <p class="green">В наявності</p>
+                <h1>Off-White x Nike blazer mid</h1>
+                <p class="amazed">Ви будете вражені їхньою вишуканістю та якістю</p>
+                <h2 id="price">1449грн</h2>
+                <p class="quanity"><strong>Кількість</strong>:</p>
+                <div class="btn">
+                    <form action="form.php">
+                        <input type="number" placeholder="0">
+                        <input type="submit" class="submit" value="Додати в корзину">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-
+    <div class="col arrival-col">
+        <div class="container arrival-container">
+            <div class="more-info">
+                <h2>Більше інформації</h2>
+                <div class="row">
+                    <div class="prop"><span>Виробник</span></div>
+                    <div class="value">В'єтнам</div>
+                </div>
+                <div class="row">
+                    <div class="prop"><span>Матеріал</span></div>
+                    <div class="value">Кожа, текстиль</div>
+                </div>
+                <div class="row">
+                    <div class="prop"><span>Сезон</span></div>
+                    <div class="value">Весна, осінь</div>
+                </div>
+                <div class="row">
+                    <div class="prop"><span>Розміри</span></div>
+                    <div class="value">41-45</div>
+                </div>
+                <div class="row">
+                    <div class="prop"><span>Гарантія</span></div>
+                    <div class="value">14 днів</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal_form"> 
+        <span id="modal_close">&times;</span> 
+            <form action="form.php">
+                <label for="name">Введіть своє ім'я</label><br>
+                <input type="text" class="form-control" id="name" placeholder="ім'я" name="user-name"><br>
+                <label for="email">Введіть свою пошту</label><br>
+                <input type="text" class="form-control" id="email" placeholder="електронна пошта" name="e-mail"><br>
+                <label><input type="radio" name="pay" value="online" id="pay-way">&nbsp;Сплатити онлайн</label>
+                <label><input type="radio" name="pay" value="offline" id="pay-way">&nbsp;Сплатити при отриманні</label>
+                <label><input type="checkbox" name="delivery" class="submit-order">&nbsp;Замовлення підтверджую</label>
+                <input type="submit" value="Підтвердити замовлення">
+            </form>
+    </div>
+    <div id="overlay"></div>
     <footer>
         <div class="container">
             <div class="connect">
@@ -108,6 +133,8 @@
             </div>
         </div>
     </footer>
+    <script src="switch.js"></script>
+    <script src="form.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
