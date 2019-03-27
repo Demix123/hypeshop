@@ -82,8 +82,8 @@ nav .nav-link:hover{
 }
 
 .arrivals-1 .container, .arrivals-2 .container{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 150px;
 }
 
@@ -311,6 +311,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 }
 
 .arrival-col .green{
+    padding-top: 30px;
     color: lightgreen;
     font-size: 25px;
     text-transform: uppercase;
@@ -339,24 +340,28 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 .arrival-col .btn input[type=number]{
     height: 60px;
     width: 100px;
-    text-align: center;
     box-sizing: border-box;
+    padding-right: 0px;
+    text-align: center;
+    border-radius: 0;
+    margin: 0px;
+    margin-right: 10px;
 }
 
-.arrival-col .btn input[type=submit]{
+.container .row .info .arrival-col .btn button{
+    border-radius: 0;
     height: 60px;
     width: 170px;
-    background-color: blue;
+    background-color: #919191;
     color: white;
     border: none;
     text-transform: uppercase;
     font-weight: bold;
+    padding-right: 0px;
 }
 
-.arrival-container .all-photo, .arrival-container .info{
-    max-width: 40%;
-
-    
+.container .row .info .arrival-col .red{
+    color: red;
 }
 
 .more-info{
@@ -365,6 +370,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 }
 
 .more-info h2{
+    padding-top: 50px;
     color: #2C2C6C;
     padding-bottom: 20px;
 }
@@ -385,14 +391,9 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     font-weight: bold;
 }
 
-.small img:hover{
-    transform: scale(2);
-    transition: all 0.7s;
-}
-
 #modal_form {
     width: 500px; 
-    height: 450px;
+    height: 500px;
     border-radius: 5px;
     background: #fff;
     position: fixed; 
@@ -467,4 +468,48 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
 #modal_form form{
     margin-top: 20px;
+}
+
+#modal_form .red{
+    color: red;
+}
+
+@media only screen and (max-width: 1630px){
+    .arrivals-2{
+        position: relative;
+    }
+    .arrivals-2 .container img{
+        position: absolute;
+        left: 50px;
+    }
+    .arrivals-2 .container .arrivals-2Content{
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    .arrivals-1 .container h2, .arrivals-2 .container h2{
+        font-size: 30px;
+    }
+
+    .arrivals-1 .container a button, .arrivals-2 .container .arrivals-2Content a button{
+        max-width: 100px;
+        font-size: 15px;
+    }
+
+    .arrivals-1 .container img, .arrivals-2 .container img{
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .arrivals-1, .arrivals-1 .container, .arrivals-2, .arrivals-2 .container{
+        height: 610px;
+    }
+
+    .arrivals-1 .container:not(img), .arrivals-1 .container img{
+        display: flex;
+        flex-direction: column;
+    }
 }
