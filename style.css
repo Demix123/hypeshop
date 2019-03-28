@@ -412,6 +412,17 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     margin-left: 0px;
 }
 
+.container-null{
+    text-align: center;
+    padding-top: 10%;
+    height: 555px;
+}
+
+.content-null-h2{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
 #modal_form {
     width: 500px; 
     height: 500px;
@@ -598,12 +609,31 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 }
 
 @media only screen and (max-width: 1200px){
-    .arrivals-1, .arrivals-1 .container, .arrivals-2, .arrivals-2 .container{
-        height: 610px;
+    .arrivals-2{
+        position: relative;
     }
 
-    .arrivals-1 .container:not(img), .arrivals-1 .container img{
-        display: flex;
-        flex-direction: column;
+    .arrivals-2 .container img{
+        position: absolute;
+        bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .arrivals-1, .arrivals-1 .container, .arrivals-2, .arrivals-2 .container{
+        height: 650px;
+    }
+
+    .arrivals-1 .container{
+        position: relative;
+    }
+
+    .arrivals-1 .container img{
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .arrivals-2 .container{
+        
     }
 }
