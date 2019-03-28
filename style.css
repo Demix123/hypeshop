@@ -157,6 +157,11 @@ nav .nav-link:hover{
     padding-top: 60px;
 }
 
+.popular-shoes .container ol li{
+    background: #A6A5A0;
+    height: 0.5px;
+}
+
 .popular-shoes .shoes-item img{
     position: absolute;
     right: 10%;
@@ -487,6 +492,80 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
 #modal_form .red{
     color: red;
+}
+
+.size-active{
+    background: #919191;
+    color: white;
+}
+
+.category{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.category-shoes-body{
+    background: #F3F3F3;
+}
+
+.category-shoes-container{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    height: 560px;
+    max-width: 1500px;
+}
+
+.category-shoes-container .category-shoes-item:last-child{
+    margin-right: 0;
+}
+
+.category-shoes-container .category-shoes-item{
+    background: white;
+    text-align: center;
+    position: relative;
+    min-width: 350px;
+    height: 350px;
+    margin-right: 100px;
+}
+
+.category-shoes-container .category-shoes-item a{
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+.category-shoes-container .category-shoes-item img{
+    padding-top: 20px;
+    max-width: 250px;
+}
+
+.category-shoes-container .category-shoes-item h3{
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.category-shoes-container .category-shoes-item p{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    bottom: 10px;
+    height: 50px;
+}
+
+.category-shoes-container .category-shoes-item a button{
+    position: absolute;
+    bottom: 38px;
+    right: 30px;
+    margin-top: 20px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    background: #F39D85;
+    border: none;
+    border-radius: 13px;
+    width: 150px;
+    height: 40px;
 }
 
 @media only screen and (max-width: 1630px){
