@@ -391,6 +391,22 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     font-weight: bold;
 }
 
+.size{
+    display: flex;
+}
+
+.size .size-value{
+    cursor: default;
+    font-size: 20px;
+    border: 1.5px solid #5C5C5C;
+    padding: 10px;
+    margin: 5px;
+}
+
+.size .size-value:first-child{
+    margin-left: 0px;
+}
+
 #modal_form {
     width: 500px; 
     height: 500px;
@@ -450,7 +466,6 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
 #modal_form input{
     text-align: center;
-    text-transform: uppercase;
 }
 
 #modal_form label[for=pay-way]{

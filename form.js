@@ -34,7 +34,7 @@ window.onload = function(){
         let warning = document.querySelector('.red');
 
         if(!isConfirm.checked){
-            warning.textContent = "Потрібно підтвердити замовлення!!!";   
+            warning.textContent = "Потрібно підтвердити замовлення!!!";
         } else{
             warning.textContent = "";
         }
@@ -50,7 +50,7 @@ window.onload = function(){
             warning.textContent += " Уважно заповніть ім'я користувача!"
         }
 
-        if(email.value.length < 3 || email.value.includes('@')){
+        if(email.value.length < 3 || !email.value.includes('@')){
             email.classList.add('is-invalid');
             warning.textContent += " Уважно заповніть електронну пошту!"
         }
