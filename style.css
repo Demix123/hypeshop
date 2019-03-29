@@ -1349,6 +1349,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
 .margin-auto{
     margin: 10px auto;
+    padding-left: 0 !important;
 }
 
 @media all and (max-width: 770px){
