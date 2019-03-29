@@ -963,10 +963,11 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
-        padding-left: 50px !important;
+        padding-left: 75px !important;
     }
 
     .categories .container .row .col{
+        margin-left: 45px !important; 
         position: relative;
         max-width: 250px;
     }
