@@ -905,8 +905,36 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         height: 1000px;
     }
 
-    .category-shoes-container .category-shoes-item{
-        
+
+    #modal_form form input[type=text], #modal_form form input[type=submit]{
+        max-width: 400px;
+        height: 50px;
+    }
+
+    #modal_form{
+        height: 550px;
+        max-width: 430px;
+        padding-left: 20px;
+        margin-left: -215px;
+    }
+
+    #modal_form form input[type=submit]{
+        font-size: 25px;
+        margin-top: 10px !important;
+    }
+
+    #modal_form #modal_close{
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #modal_form form label[for=name], #modal_form form label[for=email]{
+        font-size: 20px;        
+    }
+
+    #modal_form form label input{
+        min-width: 20px;
+        height: 20px;
     }
 }
 
@@ -927,6 +955,49 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
     .arrival-col .arrival-container .more-info .row{
         margin-right: 1px;
+    }
+
+    #modal_form form input[type=text], #modal_form form input[type=submit]{
+        max-width: 350px;
+        height: 50px;
+    }
+
+    #modal_form{
+        height: 500px;
+        max-width: 400px;
+        padding-left: 20px;
+        margin-left: -200px;
+    }
+
+    #modal_form form input[type=submit]{
+        margin-top: 0px !important;
+        font-size: 23px;
+        max-width: 300px;
+        margin-left: 7%;
+        height: 45px;
+    }
+
+    #modal_form #modal_close{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+
+    #modal_form form label[for=name], #modal_form form label[for=email]{
+        font-size: 20px;        
+    }
+
+    #modal_form form label input{
+        min-width: 20px;
+        height: 20px;
+    }
+
+    #modal_form form{
+        margin-top: 5px;
+    }
+
+    .categories .container .row .col{
+        margin-left: 50px !important;
     }
 }
 
@@ -970,7 +1041,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 70px !important;
+        margin-left: 60px !important;
         max-width: 270px;
         height: 270px;
     }
@@ -1019,6 +1090,49 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     .container .row .info .arrival-col .btn, .container .row .info .arrival-col .size{
         margin-left: 30px;
     }
+
+    #modal_form form input[type=text], #modal_form form input[type=submit]{
+        max-width: 300px;
+        height: 40px;
+    }
+
+    #modal_form{
+        height: 450px;
+        max-width: 350px;
+        padding-left: 20px;
+        margin-left: -175px;
+    }
+
+    #modal_form form input[type=submit]{
+        margin-top: 0px !important;
+        font-size: 20px;
+        max-width: 250px;
+        margin-left: 10%;
+        height: 35px;
+    }
+
+    #modal_form .switches{
+        margin-bottom: 10px !important;
+    }
+
+    #modal_form #modal_close{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+
+    #modal_form form label[for=name], #modal_form form label[for=email]{
+        font-size: 17px;        
+    }
+
+    #modal_form form label input{
+        min-width: 17px;
+        height: 17px;
+    }
+
+    #modal_form form{
+        margin-top: 5px;
+    }
 }
 
 @media only screen and (max-width: 390px){
@@ -1031,7 +1145,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 50px !important;
+        margin-left: 10px !important;
     }
 
     .arrival-col .arrival-container .more-info .row{
@@ -1166,7 +1280,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 45px !important; 
+        margin-left: 0px !important; 
         position: relative;
         max-width: 250px;
     }
@@ -1188,4 +1302,67 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     footer .container .connect .gmail p{
         font-size: 20px;
     }
+    
+    #modal_form form input[type=text], #modal_form form input[type=submit]{
+        max-width: 270px;
+        height: 40px;
+    }
+
+    #modal_form{
+        height: 450px;
+        max-width: 300px;
+        padding-left: 20px;
+        margin-left: -150px;
+    }
+
+    #modal_form form input[type=submit]{
+        margin-top: 0px !important;
+        font-size: 20px;
+        max-width: 250px;
+        margin-left: 3%;
+        height: 35px;
+    }
+
+    #modal_form .switches{
+        margin-bottom: 10px !important;
+    }
+
+    #modal_form #modal_close{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+
+    #modal_form form label[for=name], #modal_form form label[for=email]{
+        font-size: 17px;        
+    }
+
+    #modal_form form label input{
+        min-width: 17px;
+        height: 17px;
+    }
+
+    #modal_form form{
+        margin-top: 5px;
+    }
+}
+
+.margin-auto{
+    margin: 10px auto;
+}
+
+@media all and (max-width: 770px){
+    footer{
+        margin-top: 550px;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item img{
+        max-width: 200px;
+    }
+}
+
+@media all and (max-width: 699px){
+    footer{
+        margin-top: 0px;
+    }   
 }
