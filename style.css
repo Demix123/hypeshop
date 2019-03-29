@@ -887,3 +887,105 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         margin-left: 50px !important;
     }
 }
+
+@media only screen and (max-width: 350px){
+    .arrivals-1 .container{
+        padding-left: 20px;
+    }
+
+    .arrivals-2 .container{
+        padding-left: 0 !important;
+        padding-right: 0;
+    }
+
+    .arrivals-2 .container img{
+        position: absolute;
+        left: 20px;
+    }
+
+    .popular-shoes .container .carousel{
+        height: 550px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item h3{
+        min-width: 180px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item p{
+        padding-left: 20px;
+        min-width: 150px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item a button{
+        min-width: 150px;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-left: 80px !important;
+    }
+
+    .categories .container .row .col{
+        margin-left: 25px !important;
+    }
+
+    footer .container .connect .connect-item a i{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+
+    .header .container{
+        position: relative;
+    }
+
+    .header .container .navbar button{
+        position: absolute;
+        right: 0;
+    }
+
+    .arrivals-1, .arrivals-1 .container, .arrivals-2, .arrivals-2 .container{
+        height: 450px;
+    }
+
+    .arrivals-1 .container img, .arrivals-2 .container img{
+        max-width: 250px;
+    }
+
+    .arrivals-1 .container a button{
+        min-width: 150px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content a button{
+        min-width: 150px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-left: 50px !important;
+    }
+
+    .categories .container .row .col{
+        position: relative;
+        max-width: 250px;
+    }
+
+    .categories .container .row .col:nth-child(2) img{
+        height: 120px;
+        position: absolute;
+        left: 1px;
+    }
+
+    .categories .container .row .col:last-child img{
+        height: 110px;
+    }
+
+    .categories .container .row .col:first-child img{
+        height: 120px;
+    }
+
+    footer .container .connect .gmail p{
+        font-size: 20px;
+    }
+}
