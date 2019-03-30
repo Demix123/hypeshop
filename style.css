@@ -964,11 +964,17 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 60px !important;
+        margin-left: 70px !important;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
         padding-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .categories .container .row .col{
+        margin-left: 60px !important;
     }
 }
 
@@ -1037,7 +1043,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 30px !important;
+        margin-left: 50px !important;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
@@ -1048,6 +1054,10 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 @media only screen and (max-width: 520px){
     .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item h3{
         font-size: 27px !important;
+    }
+
+    .categories .container .row .col{
+        margin-left: 35px !important;
     }
 }
 
@@ -1135,7 +1145,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 25px !important;
+        margin-left: 20px !important;
         max-width: 270px;
         height: 270px;
     }
@@ -1231,7 +1241,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
 @media only screen and (max-width: 430px){
     .categories .container .row .col{
-        margin-left: 0px !important;
+        margin-left: 10px !important;
     }
 
     .popular-shoes .container .carousel{
@@ -1282,6 +1292,11 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 }
 
+@media only screen and (max-width: 410px){
+    .categories .container .row .col{
+        margin-left: 5px !important;
+    }
+}
 
 @media only screen and (max-width: 390px){
     .container .row .col .arrival-col .all-photo .bph img{
@@ -1293,7 +1308,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 1px !important;
+        margin-left: -10px !important;
     }
 
     .arrival-col .arrival-container .more-info .row{
@@ -1379,7 +1394,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-right: 10px !important;
+        margin-left: -10px !important;
     }
 
     footer .container .connect .connect-item a i{
