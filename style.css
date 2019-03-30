@@ -713,10 +713,12 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
     .arrivals-1 .container{
         position: relative;
+        padding-top: 40px;
+        text-align: center;
+        padding-left: 20px;
     }
 
-    .arrivals-1 .container{
-        padding-top: 40px;
+    .arrivals-2 .container{
         text-align: center;
     }
 
@@ -725,7 +727,6 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         position: absolute;
         left: 1%;
         top: 0;
-        text-align: center;
     }
 
     .arrivals-2 .container img{
@@ -780,6 +781,10 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         margin-top: 10px;
         margin-left: 25%;
     }
+
+    .container .row .col .arrival-col .all-photo{
+        padding-left: 30px;
+    }
 }
 
 @media only screen and (max-width: 850px){
@@ -825,6 +830,19 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 }
 
+@media only screen and (max-width: 770px){
+    .categories .container .row .col{
+        margin-left: 70px !important;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .arrivals-2 .container img{
+        position: absolute;
+        left: 23%;
+    }
+}
+
 @media only screen and (max-width: 700px){
     .arrivals-1 .container{
         padding-left: 10px;
@@ -832,7 +850,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
     .arrivals-2 .container img{
         position: absolute;
-        left: 15%;
+        left: 23%;
     }
 
     .popular-shoes .container{
@@ -854,7 +872,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
     .popular-shoes .container .carousel .carousel-inner .shoes-item:not(img){
         height: 500px !important;
-        padding-left: 160px;
+        padding-left: 200px;
         
     }
 
@@ -865,6 +883,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         margin-left: -40px;
         padding-left: 0;
         max-width: 400px !important;
+        padding-right: 100px;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(2) .shoes-item img{
@@ -938,6 +957,27 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 }
 
+@media only screen and (max-width: 600px){
+    .arrivals-2 .container img{
+        position: absolute;
+        left: 17%;
+    }
+
+    .categories .container .row .col{
+        margin-left: 60px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
+        padding-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .category-shoes-container .row .margin-auto{
+        padding-right: 0 !important;
+    }
+}
+
 @media only screen and (max-width: 550px){
     .arrivals-1 .container{
         padding-left: 50px;
@@ -999,28 +1039,78 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     .categories .container .row .col{
         margin-left: 30px !important;
     }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-left: 180px;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item h3{
+        font-size: 27px !important;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
+        padding-right: 170px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item img{
+        padding-top: 35px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(2) .shoes-item img{
+        padding-top: 45px !important;
+    }
 }
 
 @media only screen and (max-width: 500px){
-    .popular-shoes .container .carousel .carousel-inner .shoes-item{
+    .popular-shoes .container .carousel{
+        height: 500px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
         padding-top: 10px;
         max-width: 500px;
         padding-right: 100px;
-        padding-left: 120px !important;
+        padding-left: 160px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item h3{
+        font-size: 30px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item img{
+        padding-top: 70px !important;
     }
 
     .categories .container .row .col{
-        margin-left: 40px !important;
+        margin-left: 20px !important;
+    }
+
+    .container .row .col .arrival-col .all-photo{
+        padding-left: 5px;
+    }
+
+    .container .row .col .arrival-col .all-photo .bph img{
+        max-width: 365px;
+    }
+
+    .container .row .col .arrival-col .all-photo .small img{
+        max-width: 86px;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .categories .container .row .col{
+        margin-left: 10px !important;
     }
 }
 
 @media only screen and (max-width: 450px){
     .arrivals-1 .container img, .arrivals-2 .container img{
         max-width: 300px;
-    }
-
-    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
-        height: 170px;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item h3{
@@ -1033,11 +1123,15 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
-        padding-left: 120px !important; 
+        padding-left: 145px !important; 
     }
 
-    .popular-shoes .container .carousel{
-        height: 500px;
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(1) .shoes-item img{
+        padding-top: 65px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(2) .shoes-item img{
+        padding-top: 60px !important;
     }
 
     .categories .container .row .col{
@@ -1135,6 +1229,60 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 }
 
+@media only screen and (max-width: 430px){
+    .categories .container .row .col{
+        margin-left: 0px !important;
+    }
+
+    .popular-shoes .container .carousel{
+        height: 500px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-top: 10px;
+        max-width: 500px;
+        padding-right: 100px;
+        padding-left: 130px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item h3{
+        font-size: 25px; 
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item p{
+        font-size: 20px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item a button{
+        min-width: 150px;
+        font-size: 20px;
+        margin-top: 0 !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item h3{
+        font-size: 24px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:first-child .shoes-item img{
+        padding-top: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .container .row .col .arrival-col .all-photo{
+        padding-left: 0px;
+    }
+
+    .container .row .col .arrival-col .all-photo .bph img{
+        max-width: 300px;
+    }
+
+    .container .row .col .arrival-col .all-photo .small img{
+        max-width: 70px;
+    }
+}
+
+
 @media only screen and (max-width: 390px){
     .container .row .col .arrival-col .all-photo .bph img{
         max-width: 300px;
@@ -1151,6 +1299,45 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     .arrival-col .arrival-container .more-info .row{
         margin-left: 10px;
     }
+
+    .container .row .info .arrival-col .btn form input[type=number]{
+        max-width: 70px;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .categories .container .row .col{
+        margin-left: -20px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-left: 120px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
+        padding-right: 200px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:first-child .shoes-item img{
+        padding-top: 60px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(2) .shoes-item img, .popular-shoes .container .carousel .carousel-inner .carousel-item:last-child .shoes-item img{
+        padding-top: 75px !important;
+    }
+
+    .container .row .col .arrival-col .all-photo{
+        padding-left: 0px;
+    }
+
+    .container .row .col .arrival-col .all-photo .bph img{
+        max-width: 260px;
+    }
+
+    .container .row .col .arrival-col .all-photo .small img{
+        max-width: 60px;
+    }
 }
 
 @media only screen and (max-width: 350px){
@@ -1165,7 +1352,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
     .arrivals-2 .container img{
         position: absolute;
-        left: 20px;
+        left: 15%;
     }
 
     .popular-shoes .container .carousel{
@@ -1231,10 +1418,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         padding-top: 10px;
     }
 
-    .container .row .info .arrival-col .btn form input[type=number]{
-        max-width: 70px;
-        padding-left: 0;
-    }
+    
 
     .container .row .info .arrival-col .btn form button{
         max-width: 150px;
@@ -1280,7 +1464,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .categories .container .row .col{
-        margin-left: 0px !important; 
+        margin-left: -20px !important; 
         position: relative;
         max-width: 250px;
     }
@@ -1345,12 +1529,24 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     #modal_form form{
         margin-top: 5px;
     }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item:first-child .shoes-item img{
+        padding-top: 85px !important;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
+        padding-right: 170px;
+    }
+
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-left: 85px !important;
+    }
 }
 
 .margin-auto{
     margin: 10px auto;
     padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-right: 10px !important;
 }
 
 @media all and (max-width: 770px){
