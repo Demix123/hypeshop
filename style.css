@@ -523,14 +523,9 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 .category-shoes-container{
     padding-top: 70px;
     display: flex;
+    justify-content: center;
     height: 560px;
     max-width: 1500px;
-    position: relative;
-}
-
-.category-shoes-container .category-shoes-item:nth-child(n+5){
-    position: absolute;
-    left: 0;
 }
 
 .category-shoes-container .category-shoes-item:last-child{
@@ -804,29 +799,29 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         margin-left: 20%;
     }
 
-    .category-shoes-container .category-shoes-item{
+    .category-shoes-container .row .margin-auto .category-shoes-item{
         position: relative;
         min-width: 200px;
         height: 270px;
     }
     
-    .category-shoes-container .category-shoes-item img{
+    .category-shoes-container .row .margin-auto .category-shoes-item img{
         max-width: 170px;
     }
 
-    .category-shoes-container .category-shoes-item h3{
+    .category-shoes-container .row .margin-auto .category-shoes-item h3{
         font-size: 25px;
         font-weight: bold;
     }
 
-    .category-shoes-container .category-shoes-item p{
+    .category-shoes-container .row .margin-auto .category-shoes-item p{
         font-size: 20px;
         font-weight: 600;
     }
 
-    .category-shoes-container .category-shoes-item a button{
+    .category-shoes-container .row .margin-auto .category-shoes-item a button{
         position: absolute;
-        left: 35%;
+        left: 25%;
         bottom: 10px;
     }
 
@@ -930,9 +925,8 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 
     .category-shoes-container{
-        height: 1000px;
+        height: 650px;
     }
-
 
     #modal_form form input[type=text], #modal_form form input[type=submit]{
         max-width: 400px;
@@ -970,6 +964,13 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     }
 }
 
+@media only screen and (max-width: 650px){
+    .category-shoes-container .row .margin-auto .category-shoes-item a button{
+        position: absolute;
+        left: 20%;
+    }
+}
+
 @media only screen and (max-width: 600px){
     .arrivals-2 .container img{
         position: absolute;
@@ -982,6 +983,32 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
         padding-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .category-shoes-container .row .margin-auto .category-shoes-item, .category-shoes-container .row .margin-auto{
+        position: relative;
+        max-width: 200px;
+        height: 270px;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n+1){
+        margin-right: 5px;
+    }
+    
+    .category-shoes-container .row .margin-auto .category-shoes-item img{
+        max-width: 170px !important;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item h3{
+        font-size: 22px;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item a button{
+        position: absolute;
+        left: 15%;
+        bottom: 10px;
     }
 }
 
@@ -1123,11 +1150,6 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     .container .row .col .arrival-col .all-photo .small img{
         max-width: 86px;
     }
-
-    .category-shoes-container .category-shoes-item a button{
-        position: absolute;
-        left: 33%;
-    }
 }
 
 @media only screen and (max-width: 470px){
@@ -1255,6 +1277,36 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     #modal_form form{
         margin-top: 5px;
     }
+
+    .category-shoes-container{
+        height: 570px;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item, .category-shoes-container .row .margin-auto{
+        position: relative;
+        height: 230px;
+        max-width: 180px !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n+1){
+        margin-right: 10px;
+    }
+    
+    .category-shoes-container .row .margin-auto .category-shoes-item img{
+        max-width: 140px !important;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item h3{
+        font-size: 18px;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item a button{
+        position: absolute;
+        left: 20%;
+        bottom: 10px;
+        max-width: 130px;
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 430px){
@@ -1313,11 +1365,6 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 @media only screen and (max-width: 410px){
     .categories .container .row .col{
         margin-left: 5px !important;
-    }
-
-    .category-shoes-container .category-shoes-item a button{
-        position: absolute;
-        left: 29%;
     }
 }
 
