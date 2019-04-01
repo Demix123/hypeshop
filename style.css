@@ -959,6 +959,10 @@ footer .container .connect .connect-item a:nth-child(2):hover{
         min-width: 20px;
         height: 20px;
     }
+
+    .category-shoes-container .row .margin-auto{
+        height: 280px;
+    }
 }
 
 @media only screen and (max-width: 600px){
