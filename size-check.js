@@ -13,7 +13,6 @@
                 w.textContent = 'Виберіть ваш розмір';
                 btn.disabled = 'true'; 
             }
-        
         }
     })
     
