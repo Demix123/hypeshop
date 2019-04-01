@@ -299,7 +299,7 @@ footer .container .connect .connect-item a:hover{
 }
 
 footer .container .connect .connect-item a:nth-child(2):hover{
-    color: #EE9490;
+    color:#EE9490;
 }
 
 .bph{
@@ -1605,4 +1605,8 @@ footer .row>*{
 .row{
     margin-right: 0;
     margin-left: 0
+}
+
+.wText{
+    color: red;
 }
