@@ -523,9 +523,14 @@ footer .container .connect .connect-item a:nth-child(2):hover{
 .category-shoes-container{
     padding-top: 70px;
     display: flex;
-    justify-content: center;
     height: 560px;
     max-width: 1500px;
+    position: relative;
+}
+
+.category-shoes-container .category-shoes-item:nth-child(n+5){
+    position: absolute;
+    left: 0;
 }
 
 .category-shoes-container .category-shoes-item:last-child{
@@ -536,7 +541,7 @@ footer .container .connect .connect-item a:nth-child(2):hover{
     background: white;
     text-align: center;
     position: relative;
-    min-width: 350px;
+    min-width: 250px;
     height: 350px;
     margin-right: 100px;
 }
