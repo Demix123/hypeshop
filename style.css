@@ -286,6 +286,10 @@ footer{
     background: #DEDEDE;
 }
 
+footer .container{
+    cursor: default;
+}
+
 footer *{
     color: #4D4D4D;
 }
@@ -317,6 +321,7 @@ footer .container .connect .gmail p{
 
 footer .container .connect .gmail p span{
     font-weight: bold;
+    cursor: default;
 }
 
 footer .container .copyright{
