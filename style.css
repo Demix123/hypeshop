@@ -268,6 +268,10 @@ footer{
     background: #DEDEDE;
 }
 
+footer *{
+    color: #4D4D4D;
+}
+
 footer .container .connect{
     text-align: center;
 }
@@ -278,14 +282,8 @@ footer .container .connect h3{
     padding-top: 50px;
 }
 
-footer .container .connect .connect-item a{
+footer .container .connect .connect-item .frame a{
     text-decoration: none;
-    color: #747474;
-}
-
-footer .container .connect .connect-item a:nth-child(2){
-    padding-right: 55px;
-    padding-left: 55px;
 }
 
 footer .container .connect .connect-item{
@@ -305,20 +303,48 @@ footer .container .connect .gmail p span{
 
 footer .container .copyright{
     padding-top: 10px;
-    font-size: 17px;
+    font-size: 20px;
+}
+
+footer .copyright{
+    margin-top: 50px;
+    background: #1B1B1B;
 }
 
 footer .copyright p{
+    color: white;
     margin: 0;
     padding: 20px;
-  }
-
-footer .container .connect .connect-item a:hover{
-    color: #1E66D8; 
 }
 
-footer .container .connect .connect-item a:nth-child(2):hover{
-    color:#EE9490;
+footer .container .connect .connect-item{
+    display: flex;
+    justify-content: center;
+}
+
+footer .container .connect .connect-item .frame:nth-child(2){
+    margin-right: 55px;
+    margin-left: 55px;
+}
+
+footer .container .connect .connect-item .frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 10px 5px;
+    float: left;
+    min-width: 55px;
+    height: 55px;
+}
+
+footer .container .connect .connect-item .frame:hover a i{
+    color: #DEDEDE;
+}
+
+footer .container .connect .connect-item .frame:hover{
+    background: #000;
+    border-radius: 50%;
 }
 
 .bph{
