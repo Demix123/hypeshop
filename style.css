@@ -212,6 +212,7 @@ nav .nav-link:hover{
 }
 
 .carousel-indicators li{
+    margin-bottom: -30px;
     color: black;
 }
 
@@ -248,13 +249,13 @@ nav .nav-link:hover{
     margin-top: 15px;
 }
 
-.categories .container a{
+.categories .container .row .col a{
     cursor: default;
     text-decoration: none;
     color: black;
 }
 
-.categories .container h2{
+.categories .container .row .col a .category-item h2{
     font-size: 40px;
     font-weight: bold;
     padding-top: 20px;
@@ -262,7 +263,17 @@ nav .nav-link:hover{
 
 .categories .container .row .col{
     height: 400px;
-} 
+}
+
+.categories .container .h2-shoes, .categories .container .h2-clothes{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+.categories .container .h2-clothes{
+    padding-top: 60px;
+}
 
 footer{
     background: #DEDEDE;
