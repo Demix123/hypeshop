@@ -1556,3 +1556,67 @@ footer .row>*{
 .wText{
     color: red;
 }
+
+.clothes-size{
+    min-width: 60px;
+    text-align: center;
+}
+
+.size-in-cm{
+    padding-top: 15px;
+}
+
+.size-in-cm .row .col{
+    padding: 0;
+    max-width: 150px;
+    height: 120px;
+}
+
+.size-in-cm .row .col p{
+    font-size: 18px;
+}
+
+.size-in-cm .row .col:first-child{
+    border-right: 1px solid grey;
+    max-width: 130px;
+}
+
+.size-in-cm .row .col:nth-child(2){
+    padding-left: 30px;
+}
+
+.info .arrival-col .size .row{
+    min-width: 280px;
+}
+
+.info .arrival-col .manySizes{
+    display: block;
+}
+
+.container .row .info .arrival-col .size-in-cm .row .many-sizes-cm{
+    height: 200px;
+}
+
+.header .container nav .collapse ul .dropdown #navbarDropdownMenuLink{
+    color: black;
+}
+
+.header .container nav .collapse ul .dropdown .dropdown-menu a{
+    border-bottom: 1px solid black;
+    font-size: 18px;
+}
+
+.header .container nav .collapse ul .dropdown .dropdown-menu a:last-child{
+    border-bottom: 0px;
+}
+
+.header .container nav .collapse ul .dropdown .dropdown-menu{
+    background: #DEDEDE;
+    box-shadow: 22px 22px 28px -12px rgba(74,71,74,1);
+}
+
+.header .container nav .collapse ul .dropdown .dropdown-menu a:hover{
+    padding-top: 10px;
+    background: #CACACA;
+}
+
