@@ -252,8 +252,7 @@ nav .nav-link:hover{
 .categories .container .row:nth-child(2) a .category-item img{
     margin-top: 60px;
     margin-left: 15px;
-    min-width: 350px;
-    height: 185px;
+    min-width: 290px;
 }
 
 .categories .container .row .col a{
@@ -272,13 +271,13 @@ nav .nav-link:hover{
     height: 400px;
 }
 
-.categories .container .h2-shoes, .categories .container .h2-clothes{
+.categories .container .h2-shoes, .categories .container .h2-clothes, .categories .container .h2-accesories{
     text-align: center;
     font-size: 45px;
     padding-bottom: 30px;
 }
 
-.categories .container .h2-clothes{
+.categories .container .h2-clothes,.categories .container .h2-accesories{
     padding-top: 60px;
 }
 
