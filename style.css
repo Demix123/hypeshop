@@ -1634,3 +1634,7 @@ footer .row>*{
 .header .container nav .collapse ul .dropdown .dropdown-menu a:last-child{
     margin-bottom: -7px;
 }
+
+.header .container nav .collapse ul .dropdown .dropdown-menu a:active{
+    color: black;
+}
