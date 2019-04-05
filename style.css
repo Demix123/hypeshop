@@ -924,10 +924,6 @@ footer .container .connect .connect-item .frame:hover{
         max-width: 230px;
     }
 
-    .categories .container .row:first-child .col:first-child a .category-item{
-        background: red;
-    }
-
     .category-shoes-container .category-shoes-item{
         min-width: 200px;
     }
@@ -948,30 +944,56 @@ footer .container .connect .connect-item .frame:hover{
 }
 
 @media only screen and (max-width: 770px){
-    .categories .container .row .col{
-        margin-left: 70px !important;
+    .arrivals-1 .container{
+        margin-left: 70px;
+    }
+
+    .categories .container .row{
+        min-width: 540px;
+    }
+
+    .categories .container .row .col a .category-item img{
+        max-width: 230px !important;
+    }
+
+    .categories .container .row .col a .category-item h2{
+        font-size: 30px;
+    }
+
+    .categories .container .row .col a .category-item img{
+        margin-top: -10px;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: -100px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .arrivals-1 .container img{
+        margin-left: 200px;
     }
 }
 
 @media only screen and (max-width: 700px){
-    .arrivals-1 .container{
-        padding-left: 10px;
-    }
-
     .popular-shoes .container{
         max-width: 600px;
+    }
+
+    .popular-shoes{
+        height: 600px;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item img{
         padding-top: 30%;
     }
 
-    .arrivals-2 .container .arrivals-2Content *, .arrivals-1 .container *{
-        font-size: 20px;
-    }
-
-    .arrivals-2 .container .arrivals-2Content h2{
-        font-size: 30px;
+    .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item{
+        padding-top: 10px;
     }
 
     .popular-shoes .container .carousel .carousel-inner .shoes-item:not(img){
@@ -1024,10 +1046,6 @@ footer .container .connect .connect-item .frame:hover{
         font-size: 20px;
     }
 
-    .category-shoes-container{
-    }
-
-
     #modal_form form input[type=text], #modal_form form input[type=submit]{
         max-width: 400px;
         height: 50px;
@@ -1059,8 +1077,25 @@ footer .container .connect .connect-item .frame:hover{
         height: 20px;
     }
 
-    .category-shoes-container .row .margin-auto{
+    .arrivals-1, .arrivals-2{
+        height: 460px;
     }
+
+    .arrivals-1 .container img{
+        margin-top: -10px;
+        margin-left: 200px;
+    }
+
+    .arrivals-1 .container h2{
+        margin-top: 20px;
+    }
+    
+    .arrivals-2 .container .arrivals-2Content{
+    }
+
+    .arrivals-2 .container img{
+    }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -1641,13 +1676,11 @@ footer .container .connect .connect-item .frame:hover{
     padding-right: 50px;
 }
 
-@media all and (max-width: 770px){
+/*@media all and (max-width: 770px){
     footer{
         margin-top: 550px;
     }
-
-    
-}
+}*/
 
 @media all and (max-width: 699px){
     footer{
