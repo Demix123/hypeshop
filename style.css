@@ -590,6 +590,7 @@ footer .container .connect .connect-item .frame:hover{
     padding-top: 70px;
     display: flex;
     max-width: 1500px;
+    padding-bottom: 70px;
 }
 
 .category-shoes-container .category-shoes-item:last-child{
@@ -636,26 +637,46 @@ footer .container .connect .connect-item .frame:hover{
     height: 40px;
 }
 
-@media only screen and (max-width: 1350px){
-    .arrivals-1 .container h2, .arrivals-2 .container h2{
-        font-size: 30px;
-    }
-
-    .arrivals-1 .container{
-        padding-left: 100px;
-    }
-
-    .arrivals-1 .container a button, .arrivals-2 .container .arrivals-2Content a button{
-        max-width: 100px;
-        font-size: 15px;
-    }
-
+@media only screen and (max-width: 1450px){
     .arrivals-1 .container img, .arrivals-2 .container img{
         max-width: 500px;
     }
 
+    .arrivals-1, .arrivals-2{
+        height: 500px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 65%;
+        margin-top: -400px;
+    }
+}
+
+@media only screen and (max-width: 1350px){
     .category-shoes-container .category-shoes-item{
         margin-right: 50px;
+    }
+
+    .arrivals-1 .container h2, .arrivals-2 .container .arrivals-2Content h2{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .arrivals-1 .container{
+        margin-left: 200px;
+    }
+
+    .arrivals-1 .container img{
+        margin-left: 50%;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: 0px;
+    }
+
+    .arrivals-1 .container{
+        max-width: 1000px;
     }
 }
 
@@ -673,24 +694,58 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
+@media only screen and (max-width: 1215px){
+    .arrivals-1 .container img{
+        margin-left: 400px;
+        margin-top: -200px;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: 50px;
+    }
+
+    .arrivals-1 .container{
+        margin-left: 190px;
+        max-width: 900px;
+        height: 450px;
+    }
+}
+
 @media only screen and (max-width: 1200px){
 
     .categories .container .row .col{
-        max-width: 320px;
+        max-width: 430px;
     }
 
-    .categories .container .row .col .category-item img{
-        max-width: 270px;
+    .categories .container .row{
+        display: flex;
+        justify-content: center;
     }
 
-    .categories .container .row .col .category-item img:nth-child(2){
-        max-width: 320px;
+    .arrivals-2 .container img{
+        margin-left: 0;
+    }
+
+    .header .container{
+        max-width: 1100px;
+    }
+
+    .header .container nav{
+        max-width: 1100px;
     }
 }
 
 @media only screen and (max-width: 1100px){
     .category-shoes-container .category-shoes-item{
         margin-right: 30px;
+    }
+
+    .arrivals-1 .container{
+        max-width: 750px;
+    }
+
+    .arrivals-1 .container img{
+        margin-left: 300px;
     }
 }
 
@@ -713,48 +768,46 @@ footer .container .connect .connect-item .frame:hover{
         font-weight: normal;
     }
 
-    .category-shoes-container .category-shoes-item a button{
-    }
-
     .category-shoes-container{
         padding-top: 50px;
         padding-right: 0;
     }
-}
-
-@media only screen and (max-width: 1000px){
-
-    .arrivals-1 .container img{
-        position: static;
-        max-width: 400px;
-        padding-top: 25px;
-    }
 
     .arrivals-1 .container{
-        position: relative;
-        padding-top: 40px;
-        text-align: center;
-        padding-left: 20px;
+        margin-left: 140px;
     }
 
-    .arrivals-2 .container{
-        text-align: center;
-    }
-
-    .arrivals-2 .container .arrivals-2Content{
-        padding-top: 40px;
+    .arrivals-1 .container img{
+        max-width: 470px;
+        margin-left: 350px;
     }
 
     .arrivals-2 .container img{
-        max-width: 400px;
+        max-width: 470px;
+        margin-top: -50px;
     }
 
-    .arrivals-2 .container .arrivals-2Content a button, .arrivals-1 .container a button{
-        max-width: 150px;
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 60%;
     }
 
-    .arrivals-2 .container .arrivals-2Content *, .arrivals-1 .container *{
-        font-size: 30px;
+    .header .container{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header .container nav{
+        max-width: 980px;
+    }
+
+    .header .container nav .collapse ul li{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .arrivals-2 .container img{
+        margin-left: -100px;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item h3{
@@ -766,47 +819,113 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .popular-shoes .container{
-        max-width: 670px;
+        max-width: 800px;
     }
 
-    .arrivals-2{
-        position: relative;
+    .categories .container .row{
+        display: flex;
+        min-width: 700px;
     }
 
-    .arrivals-2 .container .arrivals-2Content, .arrivals-1 .container{
-        padding-top: 20px;
+    .categories .container .row .col{
+        max-width: 350px;
     }
 
-    .arrivals-2 .container .arrivals-2Content h3, .arrivals-1 .container h3{
-        font-size: 25px;
-    }
-
-    .arrivals-2 .container .arrivals-2Content a button, .arrivals-1 .container a button{
-        min-width: 200px;
-        height: 50px;
-        font-size: 20px;  
-    }
-
-    .categories .container .row .col:last-child{
-        margin-top: 10px;
-        margin-left: 25%;
+    .categories .container .row .col a .category-item img{
+        margin-left: 0;
     }
 
     .container .row .col .arrival-col .all-photo{
         padding-left: 30px;
     }
+
+    .header .container nav .collapse ul li{
+        font-size: 20px;
+    }
+
+    .categories .container .row .col a .category-item img{
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width:970px){
+    .arrivals-1 .container img{
+        margin-left: 270px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .arrivals-1 .container img{
+        margin-left: 240px;
+    }
+
+    .arrivals-1 .container{
+        margin-left: 100px;
+    }
+
+    .arrivals-1, .arrivals-2{
+        height: 470px;
+    }
 }
 
 @media only screen and (max-width: 850px){
-    .categories{
-        padding-left: 50px;
+    .arrivals-1, .arrivals-2{
+        height: 430px;
+    }
+
+    .arrivals-1 .container{
+        padding-top: 20px;
+        max-width: 300px;
+    }
+
+    .arrivals-2 .container img{
+        margin-top: -60px;
+        margin-left: -30px;
+    }
+
+    .arrivals-1 .container img{
+        margin-left: 270px;
+    }
+
+    .arrivals-1 .container img, .arrivals-2 .container img{
+        max-width: 430px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 420px;
+    }
+
+    .popular-shoes .container .carousel-inner .carousel-item:first-child .shoes-item img{
+        padding-top: 80px;
+    }
+
+    .arrivals-1 .container h3, .arrivals-2 .container .arrivals-2Content h3{
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 810px){
+    .arrivals-1 .container img, .arrivals-2 .container img{
+        max-width: 400px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-top: -330px;
     }
 }
 
 @media only screen and (max-width: 800px){
-    .categories .container .row .col, .categories .container .row .col:last-child{
-        margin-top: 10px;
-        margin-left: 20%;
+    .categories .container .row .col{
+        max-width: 320px;
+        height: 320px;
+    }
+
+    .categories .container .row .col a .category-item img{
+        max-width: 230px;
+    }
+
+    .categories .container .row:first-child .col:first-child a .category-item{
+        background: red;
     }
 
     .category-shoes-container .category-shoes-item{
@@ -825,12 +944,6 @@ footer .container .connect .connect-item .frame:hover{
     .category-shoes-container .category-shoes-item p{
         font-size: 20px;
         font-weight: 600;
-    }
-
-    .category-shoes-container .category-shoes-item a button{
-    }
-
-    .category-shoes-container{
     }
 }
 
@@ -1525,7 +1638,7 @@ footer .container .connect .connect-item .frame:hover{
 .margin-auto{
     margin: 10px auto;
     padding-left: 0 !important;
-    padding-right: 10px !important;
+    padding-right: 50px;
 }
 
 @media all and (max-width: 770px){
@@ -1533,9 +1646,7 @@ footer .container .connect .connect-item .frame:hover{
         margin-top: 550px;
     }
 
-    .category-shoes-container .row .margin-auto .category-shoes-item img{
-        max-width: 200px;
-    }
+    
 }
 
 @media all and (max-width: 699px){
@@ -1620,12 +1731,10 @@ footer .row>*{
     display: block;
 }
 
-/*.category-shoes-container{
-    display: flex;
-    justify-content: flex-start;
-}*/
+.category-shoes-container .row .margin-auto .category-shoes-item img{
+    max-width: 220px;
+}
 
-.category-shoes-container .row{
-    display: flex;
-    flex-direction: row;
+.category-shoes-container .row .margin-auto .category-shoes-item{
+    min-width: 270px;
 }
