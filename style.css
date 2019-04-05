@@ -1619,3 +1619,13 @@ footer .row>*{
 .info .arrival-col .manySizes{
     display: block;
 }
+
+/*.category-shoes-container{
+    display: flex;
+    justify-content: flex-start;
+}*/
+
+.category-shoes-container .row{
+    display: flex;
+    flex-direction: row;
+}
