@@ -237,18 +237,6 @@ nav .nav-link:hover{
     text-align: center;
 }
 
-/*.categories .container .row:first-child .col:first-child a .category-item img, .categories .container .row:first-child .col:nth-child(2) a .category-item img{
-    margin-top: 70px;
-}
-
-.categories .container .row:nth-child(3) .col:last-child a .category-item img{
-    margin-top: 10px;
-}
-
-.categories .container .row:nth-child(2) .col:first-child a .category-item img{
-    margin-top: 15px;
-}*/
-
 .categories .container .row:nth-child(2) a .category-item img{
     margin-top: 60px;
     margin-left: 15px;
@@ -268,7 +256,8 @@ nav .nav-link:hover{
 }
 
 .categories .container .row .col{
-    height: 400px;
+    padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 .categories .container .h2-shoes, .categories .container .h2-clothes, .categories .container .h2-accesories{
@@ -924,6 +913,24 @@ footer .container .connect .connect-item .frame:hover{
         max-width: 230px;
     }
 
+    .categories .mens-shoes img{
+        min-width: 90% !important;
+        margin-top: 50px !important;
+    }
+
+    .categories .container .row .col{
+        padding-top: 0;
+    }
+
+    .categories .container .row .col a .jackets img{
+        height: 290px !important;
+        margin-top: -25px;
+    }
+
+    .categories .category-item h2{
+        font-size: 35px !important;
+    }
+
     .category-shoes-container .category-shoes-item{
         min-width: 200px;
     }
@@ -953,15 +960,11 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .categories .container .row .col a .category-item img{
-        max-width: 230px !important;
+        min-width: 100% !important;
     }
 
     .categories .container .row .col a .category-item h2{
         font-size: 30px;
-    }
-
-    .categories .container .row .col a .category-item img{
-        margin-top: -10px;
     }
 
     .arrivals-2 .container img{
@@ -1089,13 +1092,16 @@ footer .container .connect .connect-item .frame:hover{
     .arrivals-1 .container h2{
         margin-top: 20px;
     }
+
+    
+    .arrivals-2 .container img{
+        margin-top: 0px;
+    }
     
     .arrivals-2 .container .arrivals-2Content{
+        margin-top: -400px !important;
+        min-width: 300px !important;
     }
-
-    .arrivals-2 .container img{
-    }
-
 }
 
 @media only screen and (max-width: 600px){
