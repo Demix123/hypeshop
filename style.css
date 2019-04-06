@@ -2133,3 +2133,7 @@ footer .row>*{
 .category-shoes-container .row .margin-auto .category-shoes-item{
     min-width: 270px;
 }
+
+.dropdown:hover > .dropdown-menu { 
+    display: block; 
+}
