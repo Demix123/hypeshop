@@ -1495,7 +1495,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .arrivals-1 .container{
-        margin-left: 80px;
+        margin-left: 75px;
         text-align: center;
     }
 
@@ -1511,13 +1511,13 @@ footer .container .connect .connect-item .frame:hover{
 
     .arrivals-2 .container img{
         margin-top: 185px;
-        margin-left: 60px;
+        margin-left: 65px;
         max-width: 330px;
     }
 
     .arrivals-2 .container .arrivals-2Content{
         margin-top: -590px !important;
-        margin-left: 100px;
+        margin-left: 105px;
         text-align: center;
     }
 
@@ -1570,6 +1570,18 @@ footer .container .connect .connect-item .frame:hover{
         min-width: 400px !important;
         display: flex;
         justify-content: center;
+    }
+
+    .arrivals-1 .container{
+        margin-left: 67px;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: 55px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 90px;
     }
 }
 
@@ -1630,6 +1642,22 @@ footer .container .connect .connect-item .frame:hover{
 
     .arrivals-2 .container .arrivals-2Content{
         margin-top: -550px !important;
+    }
+
+    .arrivals-1 .container img{
+        margin-left: -10px;
+    }
+
+    .arrivals-1 .container{
+        margin-left: 47px;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: 50px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 70px;
     }
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item:first-child .shoes-item img{
@@ -1723,6 +1751,22 @@ footer .container .connect .connect-item .frame:hover{
         height: 530px;
     }
 
+    .arrivals-1 .container img{
+        margin-left: -10px;
+    }
+
+    .arrivals-1 .container{
+        margin-left: 37px;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: 45px;
+    }
+
+    .arrivals-2 .container .arrivals-2Content{
+        margin-left: 60px;
+    }
+
     .popular-shoes .container .carousel .carousel-inner .carousel-item:first-child .shoes-item img{
         padding-top: 80px !important;
     }
@@ -1731,6 +1775,7 @@ footer .container .connect .connect-item .frame:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 350px !important;
     } 
 
     .categories .container .row .col{
@@ -2027,10 +2072,6 @@ footer .row>*{
 
 .header .container nav .collapse ul .dropdown .dropdown-menu a:hover{
     background: rgb(211, 211, 211);
-}
-
-.dropdown:hover > .dropdown-menu{ 
-    display: block;
 }
 
 .header .container nav .collapse ul .dropdown .dropdown-menu{
