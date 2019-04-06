@@ -57,13 +57,16 @@ nav .nav-link:hover{
     .header nav{
         font-size: 18px;
     }
+
     .header .navbar-brand:nth-child(2){
         font-size: 20px;
     }
+
     .header nav .navbar-brand img{
         width: 50;
         height: 50;
     }
+    
 }
 
 @media only screen and (max-width: 1000px){
@@ -1264,10 +1267,15 @@ footer .container .connect .connect-item .frame:hover{
     .arrivals-2 .container .arrivals-2Content{
         min-width: auto!important;
         max-width: 270px!important;
+        margin-left: 250px;
     }
 
     .arrivals-2 .container .arrivals-2Content h3, .arrivals-1 .container h3{
         font-size: 20px;
+    }
+
+    .arrivals-2 .container img{
+        margin-left: -20px;
     }
 }
 
@@ -1512,6 +1520,12 @@ footer .container .connect .connect-item .frame:hover{
         margin-left: 100px;
         text-align: center;
     }
+
+    .size-in-cm table{
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
 }
 
 @media only screen and (max-width: 440px){
@@ -1597,6 +1611,11 @@ footer .container .connect .connect-item .frame:hover{
     .categories .container .row{
         min-width: 380px !important;
     }
+
+    .info .arrival-col .btn form input[type=number]{
+        max-width: 60px;
+        padding-left: 0;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -1650,6 +1669,7 @@ footer .container .connect .connect-item .frame:hover{
     .categories .container .row .col a .jackets img{
         margin-top: -25px;
     }
+
 }
 
 @media only screen and (max-width: 390px){
@@ -1759,6 +1779,10 @@ footer .container .connect .connect-item .frame:hover{
 
     .container .row .col .arrival-col .all-photo .small img{
         max-width: 60px;
+    }
+
+    .info .arrival-col .btn form input[type=number]{
+        max-width: 50px !important;
     }
 }
 
