@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <!--Slider-styles-->
+        <link rel="stylesheet" href="slider/dist/css/slider-pro.min.css"/>
+        <!--/Slider-styles-->
         <title>HypeShop</title>
         <link rel="shortcut icon" href="images/nav-img.png" type="image/x-icon">    
         <meta name="description" content="Якісне і стильне взуття. З радістю допоможемо вам підібрати саме ваш розмір. Доставка по всій Україні. Ми чекаємо саме на тебе!">
@@ -87,13 +90,30 @@
                 <div class="arrival-container arrival-col">
                     <div class="all-photo">
                         <div class="bph">
-                            <img src="images/mens-shoes/item2/1.jpg" alt="mens-shoes-item2" width="400px">
-                        </div>
-                        <div class="small">
-                            <img src="images/mens-shoes/item2/2.jpg" alt="mens-shoes-item2">
-                            <img src="images/mens-shoes/item2/3.jpg" alt="mens-shoes-item2">
-                            <img src="images/mens-shoes/item2/4.jpg" alt="mens-shoes-item2">
-                            <img src="images/mens-shoes/item2/5.jpg" alt="mens-shoes-item2">
+                            <div class="slider-pro" id="my-slider">
+                                <div class="sp-slides">
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item2/1.jpg" alt="mens-shoes-item2"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item2/1.jpg" alt="mens-shoes-item2-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item2/2.jpg" alt="mens-shoes-item2"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item2/2.jpg" alt="mens-shoes-item2-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item2/3.jpg" alt="mens-shoes-item2"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item2/3.jpg" alt="mens-shoes-item2-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item2/4.jpg" alt="mens-shoes-item2"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item2/4.jpg" alt="mens-shoes-item2-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item2/5.jpg" alt="mens-shoes-item2"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item2/5.jpg" alt="mens-shoes-item2-thumb"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +160,7 @@
                             </tr>
                             <tr>
                                 <td>44</td>
-                                <td>28https://hypeshop.herokuapp.com/index.htmlсм</td>
+                                <td>28см</td>
                             </tr>
                             <tr>
                                 <td>45</td>
@@ -219,6 +239,11 @@
                 <p>&copy;2019 HypeShop всі права захищені</p>
             </div>
         </footer>
+     <!--Slider-scripts-->
+     <script src="slider/libs/jquery-1.11.0.min.js"></script>
+     <script src="slider/dist/js/jquery.sliderPro.min.js"></script>
+     <script src="slider.js"></script>
+     <!--/Slider-scripts-->
     <script src="size.js"></script>
     <script src="switch.js"></script>
     <script src="form.js"></script>

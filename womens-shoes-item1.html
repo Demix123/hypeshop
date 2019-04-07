@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <!--Slider-styles-->
+        <link rel="stylesheet" href="slider/dist/css/slider-pro.min.css"/>
+        <!--/Slider-styles-->
         <title>HypeShop</title>
         <link rel="shortcut icon" href="images/nav-img.png" type="image/x-icon">    
         <meta name="description" content="Якісне і стильне взуття. З радістю допоможемо вам підібрати саме ваш розмір. Доставка по всій Україні. Ми чекаємо саме на тебе!">
@@ -87,13 +90,30 @@
                 <div class="arrival-container arrival-col">
                     <div class="all-photo">
                         <div class="bph">
-                            <img src="images/womens-shoes/item1/1.jpg" alt="mens-shoes-item1" width="400px">
-                        </div>
-                        <div class="small">
-                            <img src="images/womens-shoes/item1/2.jpg" alt="mens-shoes-item1">
-                            <img src="images/womens-shoes/item1/3.jpg" alt="mens-shoes-item1">
-                            <img src="images/womens-shoes/item1/4.jpg" alt="mens-shoes-item1">
-                            <img src="images/womens-shoes/item1/5.jpg" alt="mens-shoes-item1">
+                            <div class="slider-pro" id="my-slider">
+                                <div class="sp-slides">
+                                    <div class="sp-slide">
+                                        <img class="sp-image womens-shoes-img" src="images/womens-shoes/item1/1.jpg" alt="womens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/womens-shoes/item1/1.jpg" alt="womens-shoes-item1-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image womens-shoes-img" src="images/womens-shoes/item1/2.jpg" alt="womens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/womens-shoes/item1/2.jpg" alt="womens-shoes-item1-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image womens-shoes-img" src="images/womens-shoes/item1/3.jpg" alt="womens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/womens-shoes/item1/3.jpg" alt="womens-shoes-item1-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image womens-shoes-img" src="images/womens-shoes/item1/4.jpg" alt="womens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/womens-shoes/item1/4.jpg" alt="womens-shoes-item1-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image womens-shoes-img" src="images/womens-shoes/item1/5.jpg" alt="womens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/womens-shoes/item1/5.jpg" alt="womens-shoes-item1-thumb"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,6 +137,36 @@
                         <div class="size-value">38</div>
                         <div class="size-value">39</div>
                         <div class="size-value">40</div>
+                    </div>
+                    <p class="wText"></p>
+                    <div class="size-in-cm">
+                        <h3>Розмірна сітка</h3>
+                        <table cellspacing="5" border="1" cellpadding="5">
+                            <tr>
+                                <td width="70">Розмір</td>
+                                <td width="70">Сантиметри</td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>22.5см</td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>23см</td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>23.5см</td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>24.5см</td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>25.5см</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -188,6 +238,11 @@
                 <p>&copy;2019 HypeShop всі права захищені</p>
             </div>
         </footer>
+    <!--Slider-scripts-->
+    <script src="slider/libs/jquery-1.11.0.min.js"></script>
+    <script src="slider/dist/js/jquery.sliderPro.min.js"></script>
+    <script src="slider.js"></script>
+    <!--/Slider-scripts-->
     <script src="size.js"></script>
     <script src="switch.js"></script>
     <script src="form.js"></script>

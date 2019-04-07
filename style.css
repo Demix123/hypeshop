@@ -2137,3 +2137,16 @@ footer .row>*{
 .dropdown:hover > .dropdown-menu { 
     display: block; 
 }
+
+.pop-item-thumbnail{
+    height: 95px !important;
+    margin: -8px !important;
+}
+
+.sp-thumbnail-container{
+    height: 150px !important;
+}
+
+.mens-shoes-img, .womens-shoes-img{
+    height: 550px !important;
+}
