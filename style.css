@@ -190,8 +190,9 @@ nav .nav-link:hover{
 .popular-shoes .container ol li{
     background: #A6A5A0;
     border: none;
-    min-width: 120px !important;
+    min-width: 130px !important;
     height: 6px;
+    margin-top: 15px;
 }
 
 .popular-shoes .shoes-item img{
@@ -983,10 +984,6 @@ footer .container .connect .connect-item .frame:hover{
     .categories .container .row{
         min-width: auto !important;
     }
-
-    /*.mens-shoes-img{
-        height: 500px !important;
-    }*/
 }
 
 @media only screen and (max-width: 750px){
@@ -1824,6 +1821,10 @@ footer .container .connect .connect-item .frame:hover{
         margin-top: -25px;
     }
 
+    .popular-shoes .container ol li{
+        min-width: 100px !important;
+        height: 6px;
+    }
 }
 
 @media only screen and (max-width: 390px){
@@ -2119,6 +2120,10 @@ footer .container .connect .connect-item .frame:hover{
 
     .arrivals-2 .container .arrivals-2Content{
         margin-top: 10px;
+    }
+
+    .popular-shoes .container ol li{
+        min-width: 80px !important;
     }
 }
 
