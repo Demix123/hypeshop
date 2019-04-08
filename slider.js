@@ -1,5 +1,5 @@
 jQuery( document ).ready(function( $ ) {
-    $( '#my-slider' ).sliderPro({
+    $('#my-slider' ).sliderPro({
         height: 500,
         arrows: true,
         buttons: false,

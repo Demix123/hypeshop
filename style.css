@@ -10,6 +10,17 @@ html{
     background: #DEDEDE;
 }
 
+.categories img,
+.mens-shoes>img, 
+.womens-shoes-category>img{
+    max-width: 100%!important;
+    min-width: 100%!important;
+}
+
+.categories .container .row .col a .category-item img{
+    min-width: 60% !important;
+}
+
 nav a{
     text-decoration: none;
     color: black;
@@ -727,15 +738,15 @@ footer .container .connect .connect-item .frame:hover{
         margin-right: 50px !important;
         padding-right: 0 !important;
     }
-    
-    .category-shoes-container .row .margin-auto:nth-child(2n){
-        margin-right: 0 !important;
-    }
+
     .category-shoes-container .row{
         display: flex;
         justify-content: center;
     }
 
+    .margin-auto:nth-child(2n){
+        margin-right: 0 !important;
+    }
 }
 
 @media only screen and (max-width: 1100px){
@@ -822,15 +833,6 @@ footer .container .connect .connect-item .frame:hover{
     .header .container nav .collapse ul li{
         font-size: 20px;
     }
-
-    .categories .container .row .col a .category-item img{
-        max-width: 300px;
-    }
-
-    .categories .container .row .col a .mens-shoes img{
-        min-width: auto;
-        max-width: 260px !important;
-    }
 }
 
 @media only screen and (max-width:970px){
@@ -902,15 +904,10 @@ footer .container .connect .connect-item .frame:hover{
 @media only screen and (max-width: 800px){
     .categories .container .row .col{
         max-width: 320px;
-        height: 320px;
-    }
-
-    .categories .container .row .col a .category-item img{
-        max-width: 230px;
+        height: 370px;
     }
 
     .categories .mens-shoes img{
-        min-width: 90% !important;
         margin-top: 50px !important;
     }
 
@@ -946,12 +943,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .margin-auto{
-        margin-right: 20px !important;
-        margin-bottom: 20px !important;
-    }
-    
-    .category-shoes-container .row .margin-auto:nth-child(2n){
-        margin-right: 0 !important;
+        margin: 10px !important;
     }
 }
 
@@ -969,7 +961,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .categories .container .row{
-        min-width: 650px;
+        min-width: auto!important;
     }
 }
 
@@ -1099,9 +1091,9 @@ footer .container .connect .connect-item .frame:hover{
         min-width: 300px !important;
     }
 
-    .category-shoes-container .row .margin-auto .category-shoes-item{
+    /* .category-shoes-container .row .margin-auto .category-shoes-item{
         height: 270px;
-    }
+    } */
 
     .category-shoes-container .row .margin-auto .category-shoes-item img{
         max-width: 200px !important;
@@ -1159,20 +1151,6 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
-@media only screen and (max-width: 630px){
-    .margin-auto{
-        margin-bottom: 15px !important;
-    }
-
-    .category-shoes-container .row .margin-auto:nth-child(2n){
-        margin-right: 15px !important;
-    }
-
-    .category-shoes-container .row .margin-auto:nth-child(2n-1){
-        margin-right: 35px !important;
-    }
-}
-
 @media only screen and (max-width: 620px){
     .category-shoes-container .row .margin-auto .category-shoes-item{
         min-width: 230px !important;
@@ -1180,14 +1158,6 @@ footer .container .connect .connect-item .frame:hover{
 
     .category-shoes-container .row .margin-auto .category-shoes-item h3{
         font-size: 23px;
-    }
-
-    .category-shoes-container .row .margin-auto:nth-child(2n){
-        margin-right: -1px !important;
-    }
-
-    .category-shoes-container .row .margin-auto:nth-child(2n-1){
-        margin-right: 20px !important;
     }
 }
 
@@ -1219,6 +1189,23 @@ footer .container .connect .connect-item .frame:hover{
     .arrivals-1 .container img{
         margin-left: 30px;
     }
+}
+
+@media only screen and (max-width: 575px){
+    .category-shoes-container .row .margin-auto .category-shoes-item, .category-shoes-container .row .margin-auto{
+        max-width: 200px !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n){
+        margin-right: 55px !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n-1){
+        margin-right: 40px !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n){
+        margin-right: 35px !important;
 }
 
 @media only screen and (max-width: 550px){
@@ -1327,6 +1314,29 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
+@media only screen and (max-width: 525px){
+    .category-shoes-container .row .margin-auto .category-shoes-item{
+        min-width: 200px !important;
+        /* height: 250px !important; */
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item img{
+        max-width: 170px !important;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item h3{
+        font-size: 20px;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n-1) {
+        margin-right: 5px !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n){
+        margin-right: 5px !important;
+    }
+}
+
 @media only screen and (max-width: 520px){
     .popular-shoes .container .carousel .carousel-inner .carousel-item:nth-child(3) .shoes-item h3{
         font-size: 27px !important;
@@ -1420,8 +1430,60 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 460px){
+    .category-shoes-container .row .margin-auto{
+        height: 200px !important;
+    }
 
+    .category-shoes-container .row .margin-auto:nth-child(2n-1) {
+        margin-right: 0 !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n){
+        margin-right: 0 !important;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item a button{
+        max-width: 150px !important;
+        height: 35px;
+        font-size: 17px;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item img{
+        max-width: 130px !important;
+        padding-top: 10px !important;
+    }
+
+    .category-shoes-container .row .margin-auto .category-shoes-item p{
+        margin-bottom: 5px;
+        font-size: 18px;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n-1) {
+        margin-right: -5px !important;
+        margin-top: 0 !important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n){
+        margin-right: 5px !important;
+        margin-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .category-shoes-container .row .margin-auto .category-shoes-item, .category-shoes-container .row .margin-auto{
+        max-width: 350px !important;
+        
+    }
+
+    .category-shoes-item{
+        margin-top: 5px!important;
+    }
+
+    .category-shoes-container .row .margin-auto:nth-child(2n), .category-shoes-container .row .margin-auto:nth-child(2n-1){
+        margin-right: 0 !important;
+    }
+    
     .popular-shoes .container .carousel .carousel-inner .carousel-item .shoes-item h3{
         font-size: 25px !important;
         font-weight: bold;
