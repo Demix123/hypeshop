@@ -1482,6 +1482,10 @@ footer .container .connect .connect-item .frame:hover{
         margin-right: 5px !important;
         margin-top: 5px !important;
     }
+
+    .popular-shoes .container ol li{
+        min-width: 110px !important;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -1649,6 +1653,10 @@ footer .container .connect .connect-item .frame:hover{
         justify-content: center;
         border: none;
     }
+
+    .popular-shoes .container ol li{
+        min-width: 110px !important;
+    }
 }
 
 @media only screen and (max-width: 440px){
@@ -1719,11 +1727,6 @@ footer .container .connect .connect-item .frame:hover{
 
     .container .row .col .arrival-col .all-photo .small img{
         max-width: 70px;
-    }
-
-    
-    .popular-shoes .container ol li{
-        min-width: 110px !important;
     }
 }
 
