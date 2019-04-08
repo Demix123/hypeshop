@@ -17,6 +17,18 @@ html{
     min-width: 100%!important;
 }
 
+.t-shirt img{
+    padding-top: 20px;
+}
+
+.categories .container .row .col:nth-child(2n){
+    margin-right: 0;
+}
+
+.categories .container .row .col a .category-item{
+    cursor: pointer;
+}
+
 .categories .container .row .col a .category-item img{
     min-width: 60% !important;
 }
@@ -308,6 +320,7 @@ footer .container .connect h3{
 
 footer .container .connect .connect-item .frame a{
     text-decoration: none;
+    padding-bottom: 2px;
 }
 
 footer .container .connect .connect-item{
@@ -920,6 +933,14 @@ footer .container .connect .connect-item .frame:hover{
         margin-top: -25px;
     }
 
+    /*.categories .container .row .col a .clothes img{
+        max-width: 250px !important;
+    }*/
+
+    .categories .container .row .col a .t-shirt img{
+        padding-top: 0;
+    }
+
     .categories .category-item h2{
         font-size: 35px !important;
     }
@@ -961,7 +982,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .categories .container .row{
-        min-width: auto!important;
+        min-width: auto !important;
     }
 }
 
@@ -1026,9 +1047,9 @@ footer .container .connect .connect-item .frame:hover{
         font-size: 25px;
     }
 
-    footer .container .connect .connect-item a i{
-        font-size: 40px;
-    }
+    /*footer .container .connect .connect-item a i{
+        font-size: 36px;
+    }*/
 
     footer .container .connect h3{
         font-size: 35px;
@@ -1206,6 +1227,7 @@ footer .container .connect .connect-item .frame:hover{
 
     .category-shoes-container .row .margin-auto:nth-child(2n){
         margin-right: 35px !important;
+    }
 }
 
 @media only screen and (max-width: 550px){
@@ -1435,14 +1457,6 @@ footer .container .connect .connect-item .frame:hover{
         height: 200px !important;
     }
 
-    .category-shoes-container .row .margin-auto:nth-child(2n-1) {
-        margin-right: 0 !important;
-    }
-
-    .category-shoes-container .row .margin-auto:nth-child(2n){
-        margin-right: 0 !important;
-    }
-
     .category-shoes-container .row .margin-auto .category-shoes-item a button{
         max-width: 150px !important;
         height: 35px;
@@ -1460,20 +1474,19 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .category-shoes-container .row .margin-auto:nth-child(2n-1) {
-        margin-right: -5px !important;
-        margin-top: 0 !important;
+        margin-right: -3px !important;
+        margin-top: 5px !important;
     }
 
     .category-shoes-container .row .margin-auto:nth-child(2n){
         margin-right: 5px !important;
-        margin-top: 0 !important;
+        margin-top: 5px !important;
     }
 }
 
 @media only screen and (max-width: 450px){
     .category-shoes-container .row .margin-auto .category-shoes-item, .category-shoes-container .row .margin-auto{
         max-width: 350px !important;
-        
     }
 
     .category-shoes-item{
@@ -2196,8 +2209,9 @@ footer .row>*{
     min-width: 270px;
 }
 
-.dropdown:hover > .dropdown-menu { 
-    display: block; 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
 .pop-item-thumbnail{
