@@ -1720,6 +1720,11 @@ footer .container .connect .connect-item .frame:hover{
     .container .row .col .arrival-col .all-photo .small img{
         max-width: 70px;
     }
+
+    
+    .popular-shoes .container ol li{
+        min-width: 110px !important;
+    }
 }
 
 @media only screen and (max-width: 410px){
@@ -1823,7 +1828,6 @@ footer .container .connect .connect-item .frame:hover{
 
     .popular-shoes .container ol li{
         min-width: 100px !important;
-        height: 6px;
     }
 }
 
@@ -2123,7 +2127,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .popular-shoes .container ol li{
-        min-width: 80px !important;
+        min-width: 60px !important;
     }
 }
 
