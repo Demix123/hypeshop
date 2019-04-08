@@ -189,7 +189,9 @@ nav .nav-link:hover{
 
 .popular-shoes .container ol li{
     background: #A6A5A0;
-    height: 0.5px;
+    border: none;
+    min-width: 120px !important;
+    height: 6px;
 }
 
 .popular-shoes .shoes-item img{
