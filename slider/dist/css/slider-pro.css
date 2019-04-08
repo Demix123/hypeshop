@@ -415,12 +415,6 @@
 }
 
 .sp-fade-arrows {
-	opacity: 0;
-	-webkit-transition: opacity 0.5s;
-	transition: opacity 0.5s;
-}
-
-.sp-slides-container:hover .sp-fade-arrows {
 	opacity: 1;
 }
 

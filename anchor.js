@@ -10,7 +10,7 @@ anchors.forEach(function(item) {
     e.preventDefault();
     
     // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top-100;
+    let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
     
     // запускаем интервал, в котором
     let scroller = setInterval(function() {
