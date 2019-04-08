@@ -2,9 +2,9 @@ body{
     max-width: 100%;
 }
 
-html{
+/*html{
     scroll-behavior: smooth;
-}
+}*/
 
 .header{
     background: #DEDEDE;
@@ -320,7 +320,7 @@ footer .container .connect h3{
 
 footer .container .connect .connect-item .frame a{
     text-decoration: none;
-    padding-bottom: 1px;
+    padding-bottom: 0.5px;
     font-size: 37px;
 }
 
@@ -985,6 +985,10 @@ footer .container .connect .connect-item .frame:hover{
     .categories .container .row{
         min-width: auto !important;
     }
+
+    /*.mens-shoes-img{
+        height: 500px !important;
+    }*/
 }
 
 @media only screen and (max-width: 750px){
