@@ -6,28 +6,29 @@ body{
     background: #DEDEDE;
 }
 
-html{
-    position: relative;
-}
-
 .arrow-frame{
     position: fixed !important;
     right: 5px;
     bottom: 5px;
-    font-size: 35px;
+    font-size: 40px;
     background: #6B6B6B;
     color: #F3F3F3;
-    border-radius: 25px;
-    min-width: 50px;
-    height: 50px;
+    border-radius: 35px;
+    min-width: 70px;
+    height: 70px;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .arrow-frame:hover{
-    color: #E4E4E4;
+    background: rgb(145, 144, 144);
+}
+
+.scroll-bevavior{
+    scroll-behavior: smooth;
 }
 
 .categories img,
