@@ -532,8 +532,7 @@ footer .container .connect .connect-item .frame:hover{
 }
 
 #modal_form {
-    width: 500px; 
-    height: 500px;
+    width: 500px;
     border-radius: 5px;
     background: #fff;
     position: fixed; 
