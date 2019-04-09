@@ -1,9 +1,5 @@
 window.onscroll = function(){
-    let btnToTop = document.querySelector('.arrow-frame');
+    let btnToTop = document.querySelector('.fa-chevron-up');
     btnToTop.style.opacity = '0.9';
-    btnToTop.style.transition = '1s';
-
-    btnToTop.addEventListener('click', function(){
-        this.classList.add = 'scroll-bevavior';
-    })
+    btnToTop.style.transition = '0.5s';
 }
