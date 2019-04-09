@@ -1,3 +1,42 @@
+<?php 
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $today = date("j.m.Y");
+        $now = date("G:i:s");
+        $name = trim($_POST['user-name']);
+        $tel = trim($_POST['tel']);
+        $region = trim($_POST['region']);
+        $town = trim($_POST['user-town']);
+        $number_post = trim($_POST['user-number']);
+        $size = $_POST['size'];
+        $model = $_POST['model'];
+
+        $token = "856008473:AAFTCGJfub7CoaTvO0IEXtRnGghiBm1p42U";
+        $chat_id = "-328962600";
+
+        $order_data = array(
+            "Дата замовлення: " => $today,
+            "Час: " => $now,
+            "Прізвище та ім'я: " => $name,
+            "Номер телефону: " => $tel,
+            "Область: " => $region,
+            "Місто: " => $town,
+            "Номер відділення: " => $number_post,
+            "Модель: " => $model,
+            "Розмір: " => $size,
+        );
+        foreach($order_data as $key => $value) {
+            $txt .= "<b>".$key."</b> ".$value."%0A";
+        };
+        $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+
+        if ($sendToTelegram) {
+            echo "Thank you";
+        } else {
+            echo "Error";
+        }
+    }
+?>
+
 <!Doctype html>
 <html>
     <head>
@@ -6,10 +45,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
+        <!--Slider-styles-->
+        <link rel="stylesheet" href="slider/dist/css/slider-pro.min.css"/>
+        <!--/Slider-styles-->
         <title>HypeShop</title>
         <link rel="shortcut icon" href="images/nav-img.png" type="image/x-icon">    
         <meta name="description" content="Якісне і стильне взуття. З радістю допоможемо вам підібрати саме ваш розмір. Доставка по всій Україні. Ми чекаємо саме на тебе!">
-        <meta name="title" content="Полюбляєш ходити в стильних кросівках? Тоді тобі до нас! | KrosShop">
         <meta name="title" content="Полюбляєш ходити в стильних кросівках? Тоді тобі до нас! | HypeShop">
         <meta name="keywords" content="кроссовки Украина,кроссовки украина, купить кроссовки Украина, купить кроссовки украина, купить кроссовки, кроссовки купить, стильные кроссовки Украина, стильные кроссовки купить, 
         взуття Україна, взуття україна, купити взуття Україна, купити взуття україна, купити взуття, взуття купити, модне взуття купити, 
@@ -88,13 +129,30 @@
                 <div class="arrival-container arrival-col">
                     <div class="all-photo">
                         <div class="bph">
-                            <img src="images/mens-shoes/item3/1.jpg" alt="mens-shoes-item3" width="400px">
-                        </div>
-                        <div class="small">
-                            <img src="images/mens-shoes/item3/2.jpg" alt="mens-shoes-item3">
-                            <img src="images/mens-shoes/item3/3.jpg" alt="mens-shoes-item3">
-                            <img src="images/mens-shoes/item3/4.jpg" alt="mens-shoes-item3">
-                            <img src="images/mens-shoes/item3/5.jpg" alt="mens-shoes-item3">
+                            <div class="slider-pro" id="my-slider">
+                                <div class="sp-slides">
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item4/1.jpg" alt="mens-shoes-item4"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item4/1.jpg" alt="mens-shoes-item4-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item2/2.jpg" alt="mens-shoes-item2"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item4/2.jpg" alt="mens-shoes-item4-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item4/3.jpg" alt="mens-shoes-item4"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item4/3.jpg" alt="mens-shoes-item4-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item4/4.jpg" alt="mens-shoes-item4"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item4/4.jpg" alt="mens-shoes-item4-thumb"/>
+                                    </div>
+                                    <div class="sp-slide">
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item4/5.jpg" alt="mens-shoes-item4"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item4/5.jpg" alt="mens-shoes-item4-thumb"/>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,7 +160,7 @@
             <div class="col info">
                 <div class="arrival-container arrival-col">
                     <p class="green">В наявності</p>
-                    <h1>New Balance 1500</h1>
+                    <h1 class="model">Adidas Yung 1</h1>
                     <p class="amazed">Ви будете вражені їхньою вишуканістю та якістю</p>
                     <h2 id="price">1349грн</h2>
                     <p class="quanity"><strong>Кількість</strong>:</p>
@@ -152,17 +210,28 @@
     </div>
     <div id="modal_form"> 
         <span id="modal_close">&times;</span> 
-            <form action="form.php">
-                <label for="name">Введіть своє ім'я</label><br>
-                <input type="text" class="form-control" id="name" placeholder="ім'я та фамілія" name="user-name"><br>
-                <label for="email">Введіть свою пошту</label><br>
-                <input type="text" class="form-control" id="email" placeholder="електронна пошта" name="e-mail"><br>
-                <label><input type="radio" name="pay" value="online" id="pay-way">&nbsp;Сплатити онлайн</label>
-                <label><input type="radio" name="pay" value="offline" id="pay-way">&nbsp;Сплатити при отриманні</label>
-                <label><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
-                <input type="submit" value="Підтвердити замовлення">
-                <p class="red"></p>
-            </form>
+        <form method="post">
+            <label for="name">Введіть своє ім'я та прізвище</label><br>
+            <input type="text" class="form-control" id="name" placeholder="Ім'я та прізвище" name="user-name">
+            <p class="w-name red"></p>
+            <label for="tel">Введіть свій телефон</label>
+            <input type="text" class="form-control" id="tel" placeholder="Номер у форматі +380XXXXXXXXX" name="tel">
+            <p class="w-tel red"></p>
+            <label for="region">Введіть область</label>
+            <input type="text"class="form-control" id="region" placeholder="Введіть область" name="region">
+            <p class="w-region red"></p>
+            <label for="town">Введіть місто доставки</label>
+            <input type="text"class="form-control" id="town" placeholder="Введіть своє місто" name="user-town">
+            <p class="w-town red"></p>
+            <label for="town">Номер відділення</label>
+            <input type="text"class="form-control" id="post" placeholder="Введіть номер найближчого відділення Нової пошти" name="user-number">
+            <p class="w-post red"></p>
+            <input type="hidden" name="size">
+            <input type="hidden" name="model">
+            <label class="switches"><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
+            <span class="w-check red"></span>
+            <input type="submit" class="pay" value="Підтвердити замовлення">
+        </form>
     </div>
     <div id="overlay"></div>
     <footer>
@@ -189,9 +258,12 @@
                 <p>&copy;2019 HypeShop всі права захищені</p>
             </div>
         </footer>
+    <!--Slider-scripts-->
+    <script src="slider/libs/jquery-1.11.0.min.js"></script>
+    <script src="slider/dist/js/jquery.sliderPro.min.js"></script>
+    <script src="slider.js"></script>
+    <!--/Slider-scripts-->
     <script src="size.js"></script>
-    <script src="switch.js"></script>
-    <script src="form.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
