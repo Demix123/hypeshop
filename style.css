@@ -1224,7 +1224,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
-@media only screen and (max-width:630px){
+/*@media only screen and (max-width:630px){
     .arrow-frame{
         position: absolute;
         right: 5px;
@@ -1234,7 +1234,7 @@ footer .container .connect .connect-item .frame:hover{
         min-width: 40px;
         height: 40px;
     }
-}
+}*/
 
 @media only screen and (max-width: 620px){
     .category-shoes-container .row .margin-auto .category-shoes-item{
@@ -1269,7 +1269,7 @@ footer .container .connect .connect-item .frame:hover{
         margin-left: -50px;
     }
 
-    .arrow-frame{
+    /*.arrow-frame{
         position: absolute;
         right: 0px;
         bottom: 5px;
@@ -1277,7 +1277,7 @@ footer .container .connect .connect-item .frame:hover{
         border-radius: 15px;
         min-width: 32px;
         height: 32px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 580px){
@@ -1818,7 +1818,7 @@ footer .container .connect .connect-item .frame:hover{
         padding-top: 80px !important;
     }
 
-    .arrow-frame{
+    /*.arrow-frame{
         position: absolute;
         right: 0px;
         bottom: 5px;
@@ -1826,7 +1826,7 @@ footer .container .connect .connect-item .frame:hover{
         border-radius: 15px;
         min-width: 30px;
         height: 30px;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 430px){
