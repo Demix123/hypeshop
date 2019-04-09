@@ -11,7 +11,7 @@
         $model = $_POST['model'];
 
         $token = "856008473:AAFTCGJfub7CoaTvO0IEXtRnGghiBm1p42U";
-        $chat_id = "187213462";
+        $chat_id = "-328962600";
 
         $order_data = array(
             "Дата замовлення: " => $today,
