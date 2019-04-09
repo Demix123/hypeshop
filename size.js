@@ -1,4 +1,4 @@
-window.onload = function () {
+
     let size = document.querySelectorAll('.size-value');
     let a;
     var selected_size;
@@ -113,4 +113,3 @@ window.onload = function () {
             }
         }
     })
-}
