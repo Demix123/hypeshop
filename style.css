@@ -12,7 +12,6 @@ html{
 
 .arrow-frame{
     position: fixed !important;
-    position: absolute;
     right: 5px;
     bottom: 5px;
     font-size: 35px;
@@ -1030,7 +1029,7 @@ footer .container .connect .connect-item .frame:hover{
         min-width: auto !important;
     }
 
-    .sp-mask{
+    /*.sp-mask{
         height: 500px !important;
     }
 
@@ -1040,7 +1039,7 @@ footer .container .connect .connect-item .frame:hover{
 
     .sp-image-container{
         height: 510px !important;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 750px){
@@ -1286,7 +1285,7 @@ footer .container .connect .connect-item .frame:hover{
         margin-left: 30px;
     }
 
-    .sp-mask{
+    /*.sp-mask{
         height: 500px !important;
     }
 
@@ -1297,7 +1296,7 @@ footer .container .connect .connect-item .frame:hover{
     .sp-image-container{
         height: 510px !important;
         max-width: 470px !important;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 575px){
@@ -1425,7 +1424,7 @@ footer .container .connect .connect-item .frame:hover{
 }
 
 @media only screen and (max-width: 530px){
-    .sp-mask{
+    /*.sp-mask{
         height: 500px !important;
     }
 
@@ -1440,7 +1439,7 @@ footer .container .connect .connect-item .frame:hover{
 
     .sp-thumbnails-container{
         max-width: 420px !important;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 525px){
@@ -1765,7 +1764,7 @@ footer .container .connect .connect-item .frame:hover{
         min-width: 110px !important;
     }
 
-    .sp-mask{
+    /*.sp-mask{
         height: 500px !important;
     }
 
@@ -1780,7 +1779,7 @@ footer .container .connect .connect-item .frame:hover{
 
     .sp-thumbnails-container{
         max-width: 420px !important;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 440px){
