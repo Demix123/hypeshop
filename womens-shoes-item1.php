@@ -254,7 +254,7 @@
             <input type="text"class="form-control" id="town" placeholder="Введіть своє місто" name="user-town">
             <p class="w-town red"></p>
             <label for="town">Номер відділення</label>
-            <input type="text"class="form-control" id="post" placeholder="Введіть номер найближчого відділення Нової пошти" name="user-number">
+            <input type="text"class="form-control" id="post" placeholder="Введіть номер відділення Нової пошти" name="user-number">
             <p class="w-post red"></p>
             <input type="hidden" name="size">
             <input type="hidden" name="model">

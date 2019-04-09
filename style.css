@@ -524,9 +524,9 @@ footer .container .connect .connect-item .frame:hover{
     border-radius: 5px;
     background: #fff;
     position: fixed; 
-    top: 30%; 
+    top: 40%; 
     left: 50%;
-    margin-top: -200px;
+    margin-top: -250px;
     margin-left: -250px;
     display: none;
     z-index: 5;
@@ -1016,18 +1016,6 @@ footer .container .connect .connect-item .frame:hover{
     .categories .container .row{
         min-width: auto !important;
     }
-
-    /*.sp-mask{
-        height: 500px !important;
-    }
-
-    .mens-shoes-img, .womens-shoes-img{
-        height: 250px !important;
-    }
-
-    .sp-image-container{
-        height: 510px !important;
-    }*/
 }
 
 @media only screen and (max-width: 750px){
@@ -1105,10 +1093,13 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     #modal_form{
-        height: 550px;
         max-width: 430px;
         padding-left: 20px;
         margin-left: -215px;
+    }
+
+    #modal_form form input[type=text]{
+        font-size: 15px;
     }
 
     #modal_form form input[type=submit]{
@@ -1151,10 +1142,6 @@ footer .container .connect .connect-item .frame:hover{
         margin-top: -450px !important;
         min-width: 300px !important;
     }
-
-    /* .category-shoes-container .row .margin-auto .category-shoes-item{
-        height: 270px;
-    } */
 
     .category-shoes-container .row .margin-auto .category-shoes-item img{
         max-width: 200px !important;
@@ -1304,7 +1291,6 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     #modal_form{
-        height: 500px;
         max-width: 400px;
         padding-left: 20px;
         margin-left: -200px;
@@ -1312,9 +1298,9 @@ footer .container .connect .connect-item .frame:hover{
 
     #modal_form form input[type=submit]{
         margin-top: 0px !important;
-        font-size: 23px;
-        max-width: 300px;
-        margin-left: 7%;
+        font-size: 20px;
+        max-width: 270px;
+        margin-left: 13%;
         height: 45px;
     }
 
@@ -1640,7 +1626,7 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     .arrival-col .arrival-container .more-info .row .prop{
-        padding-left: 2px;
+        padding-left: 10px;
     }
 
     .container .row .info .arrival-col .btn, .container .row .info .arrival-col .size{
@@ -1653,10 +1639,13 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     #modal_form{
-        height: 450px;
         max-width: 350px;
         padding-left: 20px;
         margin-left: -175px;
+    }
+
+    #modal_form form input[type=text]{
+        font-size: 14px;
     }
 
     #modal_form form input[type=submit]{
@@ -2155,7 +2144,6 @@ footer .container .connect .connect-item .frame:hover{
     }
 
     #modal_form{
-        height: 450px;
         max-width: 300px;
         padding-left: 20px;
         margin-left: -150px;
@@ -2167,6 +2155,10 @@ footer .container .connect .connect-item .frame:hover{
         max-width: 250px;
         margin-left: 3%;
         height: 35px;
+    }
+
+    #modal_form form input[type=text]{
+        font-size: 13px;
     }
 
     #modal_form .switches{
@@ -2210,6 +2202,10 @@ footer .container .connect .connect-item .frame:hover{
 
     .popular-shoes .container ol li{
         min-width: 60px !important;
+    }
+
+    .arrival-col .arrival-container .more-info .row .prop{
+        padding-left: 5px;
     }
 }
 
