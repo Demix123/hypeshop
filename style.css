@@ -11,19 +11,24 @@ html{
 }
 
 .arrow-frame{
-    position: fixed;
+    position: fixed !important;
     position: absolute;
     right: 5px;
     bottom: 5px;
     font-size: 35px;
-    background: black;
-    color: white;
+    background: #6B6B6B;
+    color: #F3F3F3;
     border-radius: 25px;
     min-width: 50px;
     height: 50px;
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.arrow-frame:hover{
+    color: #E4E4E4;
 }
 
 .categories img,
@@ -936,6 +941,18 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
+@media only screen and (max-width: 830px){
+    .arrow-frame{
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        font-size: 30px;
+        border-radius: 25px;
+        min-width: 45px;
+        height: 45px;
+    }
+}
+
 @media only screen and (max-width: 810px){
     .arrivals-1 .container img, .arrivals-2 .container img{
         max-width: 400px;
@@ -964,10 +981,6 @@ footer .container .connect .connect-item .frame:hover{
         height: 290px !important;
         margin-top: -25px;
     }
-
-    /*.categories .container .row .col a .clothes img{
-        max-width: 250px !important;
-    }*/
 
     .categories .container .row .col a .t-shirt img{
         padding-top: 0;
@@ -1017,18 +1030,17 @@ footer .container .connect .connect-item .frame:hover{
         min-width: auto !important;
     }
 
-    /*.sp-image-container, .sp-slides{
-        height: 550px !important;
-    }*/
+    .sp-mask{
+        height: 500px !important;
+    }
 
-    /*.mens-shoes-img{
-        height: 350px !important;
-        min-width: 300px !important;
-    }*/
+    .mens-shoes-img, .womens-shoes-img{
+        height: 250px !important;
+    }
 
-    /*.container .row .col{
-        height: 650px;
-    }*/
+    .sp-image-container{
+        height: 510px !important;
+    }
 }
 
 @media only screen and (max-width: 750px){
@@ -1213,6 +1225,18 @@ footer .container .connect .connect-item .frame:hover{
     }
 }
 
+@media only screen and (max-width:630px){
+    .arrow-frame{
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        font-size: 30px;
+        border-radius: 20px;
+        min-width: 40px;
+        height: 40px;
+    }
+}
+
 @media only screen and (max-width: 620px){
     .category-shoes-container .row .margin-auto .category-shoes-item{
         min-width: 230px !important;
@@ -1245,11 +1269,34 @@ footer .container .connect .connect-item .frame:hover{
         max-width: 350px;
         margin-left: -50px;
     }
+
+    .arrow-frame{
+        position: absolute;
+        right: 0px;
+        bottom: 5px;
+        font-size: 25px;
+        border-radius: 15px;
+        min-width: 32px;
+        height: 32px;
+    }
 }
 
 @media only screen and (max-width: 580px){
     .arrivals-1 .container img{
         margin-left: 30px;
+    }
+
+    .sp-mask{
+        height: 500px !important;
+    }
+
+    .mens-shoes-img, .womens-shoes-img{
+        height: 250px !important;
+    }
+
+    .sp-image-container{
+        height: 510px !important;
+        max-width: 470px !important;
     }
 }
 
@@ -1374,6 +1421,25 @@ footer .container .connect .connect-item .frame:hover{
 
     .arrivals-2 .container img{
         margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    .sp-mask{
+        height: 500px !important;
+    }
+
+    .mens-shoes-img, .womens-shoes-img{
+        height: 250px !important;
+    }
+
+    .sp-image-container{
+        height: 490px !important;
+        max-width: 420px !important;
+    }
+
+    .sp-thumbnails-container{
+        max-width: 420px !important;
     }
 }
 
@@ -1698,6 +1764,23 @@ footer .container .connect .connect-item .frame:hover{
     .popular-shoes .container ol li{
         min-width: 110px !important;
     }
+
+    .sp-mask{
+        height: 500px !important;
+    }
+
+    .mens-shoes-img, .womens-shoes-img{
+        height: 250px !important;
+    }
+
+    .sp-image-container{
+        height: 470px !important;
+        max-width: 400px !important;
+    }
+
+    .sp-thumbnails-container{
+        max-width: 420px !important;
+    }
 }
 
 @media only screen and (max-width: 440px){
@@ -1734,6 +1817,16 @@ footer .container .connect .connect-item .frame:hover{
 
     .popular-shoes .container .carousel .carousel-inner .carousel-item:first-child .shoes-item img{
         padding-top: 80px !important;
+    }
+
+    .arrow-frame{
+        position: absolute;
+        right: 0px;
+        bottom: 5px;
+        font-size: 25px;
+        border-radius: 15px;
+        min-width: 30px;
+        height: 30px;
     }
 }
 
