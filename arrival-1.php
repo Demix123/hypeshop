@@ -160,7 +160,7 @@
             <div class="col info">
                 <div class="arrival-container arrival-col">
                     <p class="green">В наявності</p>
-                    <h1>Off-White x Nike blazer mid</h1>
+                    <h1 class="model">Off-White x Nike blazer mid</h1>
                     <p class="amazed">Ви будете вражені їхньою вишуканістю та якістю</p>
                     <h2 id="price">1449грн</h2>
                     <p class="quanity"><strong>Кількість</strong>:</p>
