@@ -25,7 +25,7 @@ window.onload = function () {
     btn_add.addEventListener('click', function () {
         for (let i = 0; i < size.length; i++) {
             if (!size[i].classList.contains('size-active')) {
-                warningText.textContent = 'Вибери розмір!!!';
+                warningText.textContent = 'Виберіть ваш розмір!';
             }
             else {
                 warningText.textContent = '';
