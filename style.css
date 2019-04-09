@@ -524,9 +524,9 @@ footer .container .connect .connect-item .frame:hover{
     border-radius: 5px;
     background: #fff;
     position: fixed; 
-    top: 50%; 
+    top: 30%; 
     left: 50%;
-    margin-top: -250px;
+    margin-top: -200px;
     margin-left: -250px;
     display: none;
     z-index: 5;
