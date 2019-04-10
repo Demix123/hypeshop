@@ -261,7 +261,7 @@
             <input type="hidden" name="model">
             <label class="switches"><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
             <span class="w-check red"></span>
-            <input type="submit" class="pay" value="Підтвердити замовлення">
+            <button class="pay">Підтвердити замовлення</button>
         </form>
     </div>
     <div id="overlay"></div>
