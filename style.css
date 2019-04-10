@@ -2332,12 +2332,12 @@ footer .row>*{
     height: 550px !important;
 }
 
-.copyright{
+footer .copyright{
     display: flex;
     justify-content: space-between;
 }
 
-.bottom .counter{
+footer .copyright .bottom .counter{
     display: flex;
     justify-content: flex-end;
     padding-right: 100px !important;
