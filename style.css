@@ -1216,6 +1216,10 @@ footer .container .connect .connect-item .frame:hover{
         bottom: 5px;
         font-size: 40px;
     }
+
+    footer .bottom .copyright .counter{
+        margin-right: 40px !important;
+    }
 }
 
 @media only screen and (max-width: 620px){
@@ -2045,7 +2049,11 @@ footer .container .connect .connect-item .frame:hover{
 
     .categories .container .row{
         min-width: 330px !important;
-    } 
+    }
+
+    footer .bottom .copyright .counter{
+        margin-right: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 350px){
