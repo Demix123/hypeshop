@@ -2332,7 +2332,12 @@ footer .row>*{
     height: 550px !important;
 }
 
-/*.bottom .counter{
-    background: #DEDEDE;
-    color: white;
-}*/
+.bottom{
+    display: flex;
+}
+
+.bottom .counter{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px !important;
+}
