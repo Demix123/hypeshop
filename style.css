@@ -2340,5 +2340,5 @@ footer .copyright{
 footer .copyright .bottom .counter{
     display: flex;
     justify-content: flex-end;
-    padding-right: 100px !important;
+    margin-right: 100px !important;
 }
