@@ -52,11 +52,22 @@ nav a{
     height: 80px;
 }
 
+nav .nav-link{
+    padding-bottom: 10px;
+}
+
+nav .collapse .nav-item{
+    height: 45px;
+}
+
+.dropdown-toggle:hover{
+    cursor: pointer;
+}
+
 nav .nav-link:hover{
-    padding-top: 2px;
     color: black;
     background: lightgray;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 .header .navbar-brand:hover{
@@ -105,9 +116,9 @@ nav .nav-link:hover{
     .header ul li:last-child{
         padding-left: 0px;
     }
-    nav .nav-link:hover{
-        padding-left: 10px;
-        padding-top: 0px !important;
+    nav .nav-link{
+        padding-left: 10px !important;
+        padding-top: 5px !important;
     }
     .header nav ul li{
         font-size: 20px;
@@ -2299,9 +2310,13 @@ footer .row>*{
     min-width: 270px;
 }
 
-.dropdown:hover .dropdown-menu {
+/*.dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
+}*/
+
+.dropdown-menu{
+    margin-top: 0!important;
 }
 
 .pop-item-thumbnail{

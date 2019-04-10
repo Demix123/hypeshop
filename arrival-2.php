@@ -50,8 +50,8 @@
         <!--/Slider-styles-->
         <title>HypeShop</title>
         <link rel="shortcut icon" href="images/nav-img.png" type="image/x-icon">    
-        <meta name="description" content="Якісне і стильне взуття. З радістю допоможемо вам підібрати саме ваш розмір. Доставка по всій Україні. Ми чекаємо саме на тебе!">
-        <meta name="title" content="Полюбляєш ходити в стильних кросівках? Тоді тобі до нас! | HypeShop">
+        <meta name="description" content="Великий асортимент взуття та одягу, яке ми доставимо в будь-яке місто України!">
+        <meta name="title" content="Полюбляєш ходити в стильному взутті та одязі? Тоді тобі до нас! | HypeShop">
         <meta name="keywords" content="кроссовки Украина,кроссовки украина, купить кроссовки Украина, купить кроссовки украина, купить кроссовки, кроссовки купить, стильные кроссовки Украина, стильные кроссовки купить, 
         взуття Україна, взуття україна, купити взуття Україна, купити взуття україна, купити взуття, взуття купити, модне взуття купити, 
         hypeshop, hypeshop кроссовки, hypeshop купить, hypeshop штаны, hypeshop кофты, hypeshop куртки, hypeshop кроссовки купить, hypeshop купить, hypeshop штаны купить, hypeshop кофты купить, hypeshop куртки купить,
@@ -296,6 +296,7 @@
     <script src="slider/dist/js/jquery.sliderPro.min.js"></script>
     <script src="slider.js"></script>
     <!--/Slider-scripts-->
+    <script src="dropdown-bg-onclick.js"></script>
     <script src="size.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
