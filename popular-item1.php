@@ -1,3 +1,42 @@
+<?php 
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $today = date("j.m.Y");
+        $now = date("G:i:s");
+        $name = trim($_POST['user-name']);
+        $tel = trim($_POST['tel']);
+        $region = trim($_POST['region']);
+        $town = trim($_POST['user-town']);
+        $number_post = trim($_POST['user-number']);
+        $size = $_POST['size'];
+        $model = $_POST['model'];
+
+        $token = "856008473:AAFTCGJfub7CoaTvO0IEXtRnGghiBm1p42U";
+        $chat_id = "-328962600";
+
+        $order_data = array(
+            "Дата замовлення: " => $today,
+            "Час: " => $now,
+            "Прізвище та ім'я: " => $name,
+            "Номер телефону: " => $tel,
+            "Область: " => $region,
+            "Місто: " => $town,
+            "Номер відділення: " => $number_post,
+            "Модель: " => $model,
+            "Розмір: " => $size,
+        );
+        foreach($order_data as $key => $value) {
+            $txt .= "<b>".$key."</b> ".$value."%0A";
+        };
+        $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+
+        if ($sendToTelegram) {
+            echo "Thank you";
+        } else {
+            echo "Error";
+        }
+    }
+?>
+
 <!Doctype html>
 <html>
     <head>
@@ -121,7 +160,7 @@
             <div class="col info">
                 <div class="arrival-container arrival-col">
                     <p class="green">В наявності</p>
-                    <h1>Adidas Yeezy Boost 700<br>Wave Runner</h1>
+                    <h1 class="model">Adidas Yeezy Boost 700<br>Wave Runner</h1>
                     <p class="amazed">Ви будете вражені їхньою вишуканістю та якістю</p>
                     <h2 id="price">1249грн</h2>
                     <p class="quanity"><strong>Кількість</strong>:</p>
@@ -223,17 +262,28 @@
     </div>
     <div id="modal_form"> 
         <span id="modal_close">&times;</span> 
-            <form action="form.php">
-                <label for="name">Введіть своє ім'я</label><br>
-                <input type="text" class="form-control" id="name" placeholder="ім'я" name="user-name"><br>
-                <label for="email">Введіть свою пошту</label><br>
-                <input type="text" class="form-control" id="email" placeholder="електронна пошта" name="e-mail"><br>
-                <label><input type="radio" name="pay" value="online" id="pay-way">&nbsp;Сплатити онлайн</label>
-                <label><input type="radio" name="pay" value="offline" id="pay-way">&nbsp;Сплатити при отриманні</label>
-                <label><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
-                <input type="submit" value="Підтвердити замовлення">
-                <p class="red"></p>
-            </form>
+        <form method="post">
+            <label for="name">Введіть своє ім'я та прізвище</label><br>
+            <input type="text" class="form-control" id="name" placeholder="Ім'я та прізвище" name="user-name">
+            <p class="w-name red"></p>
+            <label for="tel">Введіть свій телефон</label>
+            <input type="text" class="form-control" id="tel" placeholder="Номер у форматі +380XXXXXXXXX" name="tel">
+            <p class="w-tel red"></p>
+            <label for="region">Введіть область</label>
+            <input type="text"class="form-control" id="region" placeholder="Введіть область" name="region">
+            <p class="w-region red"></p>
+            <label for="town">Введіть місто доставки</label>
+            <input type="text"class="form-control" id="town" placeholder="Введіть своє місто" name="user-town">
+            <p class="w-town red"></p>
+            <label for="town">Номер відділення</label>
+            <input type="text"class="form-control" id="post" placeholder="Введіть номер відділення Нової пошти" name="user-number">
+            <p class="w-post red"></p>
+            <input type="hidden" name="size">
+            <input type="hidden" name="model">
+            <label class="switches"><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
+            <span class="w-check red"></span>
+            <input type="submit" class="pay" value="Підтвердити замовлення">
+        </form>
     </div>
     <div id="overlay"></div>
     <footer>
@@ -265,7 +315,6 @@
     <script src="slider/dist/js/jquery.sliderPro.min.js"></script>
     <script src="slider.js"></script>
     <!--/Slider-scripts-->
-    <script src="switch.js"></script>
     <script src="size.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

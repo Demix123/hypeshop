@@ -1,3 +1,42 @@
+<?php 
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $today = date("j.m.Y");
+        $now = date("G:i:s");
+        $name = trim($_POST['user-name']);
+        $tel = trim($_POST['tel']);
+        $region = trim($_POST['region']);
+        $town = trim($_POST['user-town']);
+        $number_post = trim($_POST['user-number']);
+        $size = $_POST['size'];
+        $model = $_POST['model'];
+
+        $token = "856008473:AAFTCGJfub7CoaTvO0IEXtRnGghiBm1p42U";
+        $chat_id = "-328962600";
+
+        $order_data = array(
+            "Дата замовлення: " => $today,
+            "Час: " => $now,
+            "Прізвище та ім'я: " => $name,
+            "Номер телефону: " => $tel,
+            "Область: " => $region,
+            "Місто: " => $town,
+            "Номер відділення: " => $number_post,
+            "Модель: " => $model,
+            "Розмір: " => $size,
+        );
+        foreach($order_data as $key => $value) {
+            $txt .= "<b>".$key."</b> ".$value."%0A";
+        };
+        $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
+
+        if ($sendToTelegram) {
+            echo "Thank you";
+        } else {
+            echo "Error";
+        }
+    }
+?>
+
 <!Doctype html>
 <html>
     <head>
@@ -40,50 +79,50 @@
     </head>
   <body>
     <div class="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/nav-img.png" class="d-inline-block align-top" alt="brand-img">
-                    <a class="navbar-brand" href="index.html">HypeShop</a>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="https://hypeshop.herokuapp.com/index.html#Новинки">Новинки</a>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="https://hypeshop.herokuapp.com/index.html#Популярні_моделі">Популярні моделі</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Категорії
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Взуття">Чоловіче взуття</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Взуття">Жіноче взуття</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг1">Куртки</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг1">Штани</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг2">Кофти</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг2">Футболки</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Аксесуари">Рюкзаки</a>
-                                <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Аксесуари">Кепки</a>
-                            </div>
-                        </li>
-                        <li class="nav-item active">
-                                <a class="nav-link" href="https://hypeshop.herokuapp.com/index.html#Про_нас">Зв'язатися з нами</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Корзина</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/nav-img.png" class="d-inline-block align-top" alt="brand-img">
+                        <a class="navbar-brand" href="index.html">HypeShop</a>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+            
+                    <div class="collapse navbar-collapse" id="navbar1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://hypeshop.herokuapp.com/index.html#Новинки">Новинки</a>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="https://hypeshop.herokuapp.com/index.html#Популярні_моделі">Популярні моделі</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Категорії
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Взуття">Чоловіче взуття</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Взуття">Жіноче взуття</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг1">Куртки</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг1">Штани</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг2">Кофти</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Одяг2">Футболки</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Аксесуари">Рюкзаки</a>
+                                    <a class="dropdown-item" href="https://hypeshop.herokuapp.com/index.html#Аксесуари">Кепки</a>
+                                </div>
+                            </li>
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="https://hypeshop.herokuapp.com/index.html#Про_нас">Зв'язатися з нами</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Корзина</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -93,24 +132,24 @@
                             <div class="slider-pro" id="my-slider">
                                 <div class="sp-slides">
                                     <div class="sp-slide">
-                                        <img class="sp-image" src="images/popular-3/pop3-item2.jpg" alt="popular-item3"/>
-                                        <img class="sp-thumbnail" src="images/popular-3/pop3-item2.jpg" alt="popular-item3-thumb"/>
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item1/1.jpg" alt="mens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item1/1.jpg" alt="mens-shoes-item1-thumb"/>
                                     </div>
                                     <div class="sp-slide">
-                                        <img class="sp-image" src="images/popular-3/pop3-item4.jpg" alt="popular-item3"/>
-                                        <img class="sp-thumbnail" src="images/popular-3/pop3-item4.jpg" alt="popular-item3-thumb"/>
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item1/2.jpg" alt="mens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item1/2.jpg" alt="mens-shoes-item1-thumb"/>
                                     </div>
                                     <div class="sp-slide">
-                                        <img class="sp-image" src="images/popular-3/pop3-item5.jpg" alt="popular-item3"/>
-                                        <img class="sp-thumbnail" src="images/popular-3/pop3-item5.jpg" alt="popular-item3-thumb"/>
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item1/3.jpg" alt="mens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item1/3.jpg" alt="mens-shoes-item1-thumb"/>
                                     </div>
                                     <div class="sp-slide">
-                                        <img class="sp-image" src="images/popular-3/pop3-item1.jpg" alt="popular-item3"/>
-                                        <img class="sp-thumbnail" src="images/popular-3/pop3-item1.jpg" alt="popular-item3-thumb"/>
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item1/4.jpg" alt="mens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item1/4.jpg" alt="mens-shoes-item1-thumb"/>
                                     </div>
                                     <div class="sp-slide">
-                                        <img class="sp-image" src="images/popular-3/pop3-item3.jpg" alt="popular-item3"/>
-                                        <img class="sp-thumbnail" src="images/popular-3/pop3-item3.jpg" alt="popular-item3-thumb"/>
+                                        <img class="sp-image mens-shoes-img" src="images/mens-shoes/item1/5.jpg" alt="mens-shoes-item1"/>
+                                        <img class="sp-thumbnail" src="images/mens-shoes/item1/5.jpg" alt="mens-shoes-item1-thumb"/>
                                     </div>
                                 </div>
                             </div>
@@ -121,9 +160,9 @@
             <div class="col info">
                 <div class="arrival-container arrival-col">
                     <p class="green">В наявності</p>
-                    <h1>Nike LeBron 13<br>Written in the Stars</h1>
+                    <h1 class="model">Adidas Prophere</h1>
                     <p class="amazed">Ви будете вражені їхньою вишуканістю та якістю</p>
-                    <h2 id="price">1449грн</h2>
+                    <h2 id="price">1349грн</h2>
                     <p class="quanity"><strong>Кількість</strong>:</p>
                     <div class="btn">
                         <form class="form-inline">
@@ -137,6 +176,36 @@
                         <div class="size-value">43</div>
                         <div class="size-value">44</div>
                         <div class="size-value">45</div>
+                    </div>
+                    <p class="wText"></p>
+                    <div class="size-in-cm">
+                        <h3>Розмірна сітка</h3>
+                        <table cellspacing="5" border="1" cellpadding="5">
+                            <tr>
+                                <td width="70">Розмір</td>
+                                <td width="70">Сантиметри</td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td>25.5см</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>26см</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>27см</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>27.5см</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>28см</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -152,7 +221,7 @@
                 </div>
                 <div class="row">
                     <div class="prop"><span>Матеріал</span></div>
-                    <div class="value">Резина, текстиль</div>
+                    <div class="value">Текстиль</div>
                 </div>
                 <div class="row">
                     <div class="prop"><span>Сезон</span></div>
@@ -166,22 +235,34 @@
                     <div class="prop"><span>Гарантія</span></div>
                     <div class="value">14 днів</div>
                 </div>
+                <input type="hidden" value="Sneakers Drop">
             </div>
         </div>
     </div>
     <div id="modal_form"> 
         <span id="modal_close">&times;</span> 
-            <form action="form.php">
-                <label for="name">Введіть своє ім'я</label><br>
-                <input type="text" class="form-control" id="name" placeholder="ім'я" name="user-name"><br>
-                <label for="email">Введіть свою пошту</label><br>
-                <input type="text" class="form-control" id="email" placeholder="електронна пошта" name="e-mail"><br>
-                <label><input type="radio" name="pay" value="online" id="pay-way">&nbsp;Сплатити онлайн</label>
-                <label><input type="radio" name="pay" value="offline" id="pay-way">&nbsp;Сплатити при отриманні</label>
-                <label><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
-                <input type="submit" value="Підтвердити замовлення">
-                <p class="red"></p>
-            </form>
+        <form method="post">
+            <label for="name">Введіть своє ім'я та прізвище</label><br>
+            <input type="text" class="form-control" id="name" placeholder="Ім'я та прізвище" name="user-name">
+            <p class="w-name red"></p>
+            <label for="tel">Введіть свій телефон</label>
+            <input type="text" class="form-control" id="tel" placeholder="Номер у форматі +380XXXXXXXXX" name="tel">
+            <p class="w-tel red"></p>
+            <label for="region">Введіть область</label>
+            <input type="text"class="form-control" id="region" placeholder="Введіть область" name="region">
+            <p class="w-region red"></p>
+            <label for="town">Введіть місто доставки</label>
+            <input type="text"class="form-control" id="town" placeholder="Введіть своє місто" name="user-town">
+            <p class="w-town red"></p>
+            <label for="town">Номер відділення</label>
+            <input type="text"class="form-control" id="post" placeholder="Введіть номер відділення Нової пошти" name="user-number">
+            <p class="w-post red"></p>
+            <input type="hidden" name="size">
+            <input type="hidden" name="model">
+            <label class="switches"><input type="checkbox" name="confirm" class="submit-order" id="confirm">&nbsp;Замовлення підтверджую</label>
+            <span class="w-check red"></span>
+            <input type="submit" class="pay" value="Підтвердити замовлення">
+        </form>
     </div>
     <div id="overlay"></div>
     <footer>
@@ -214,8 +295,6 @@
     <script src="slider.js"></script>
     <!--/Slider-scripts-->
     <script src="size.js"></script>
-    <script src="switch.js"></script>
-    <script src="form.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
