@@ -2337,8 +2337,9 @@ footer .copyright{
     justify-content: space-between;
 }
 
-footer .copyright .bottom .counter{
+footer .bottom .copyright .counter{
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px !important;
+    align-items: center;
+    margin-right: 50px !important;
 }
