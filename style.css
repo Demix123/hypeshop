@@ -2340,5 +2340,5 @@ footer .row>*{
 .bottom .counter{
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px !important;
+    padding-right: 100px !important;
 }
