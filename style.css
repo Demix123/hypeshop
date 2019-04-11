@@ -1730,6 +1730,10 @@ footer .container .connect .connect-item .frame:hover{
     .popular-shoes .container ol li{
         min-width: 110px !important;
     }
+
+    footer .bottom .copyright .counter{
+        margin-right: 20px !important;
+    }
 }
 
 @media only screen and (max-width: 440px){

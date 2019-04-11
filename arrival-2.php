@@ -152,7 +152,7 @@
             <div class="col info">
                 <div class="arrival-container arrival-col">
                     <p class="green">В наявності</p>
-                    <h1 class="model">Ветровка<br>Supreme x The North Face map</h1>
+                    <h1 class="model">Куртка<br>Supreme x The North Face map</h1>
                     <p class="amazed">Ви будете вражені її вишуканістю та якістю</p>
                     <h2 id="price">1399грн</h2>
                     <p class="quanity"><strong>Кількість</strong>:</p>
