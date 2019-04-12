@@ -1,4 +1,4 @@
-<!--<?php 
+<?php 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $today = date("j.m.Y");
         $now = date("G:i:s");
@@ -35,7 +35,7 @@
             echo "Error";
         }
     }
-?>-->
+?>
 
 <!Doctype html>
 <html>
