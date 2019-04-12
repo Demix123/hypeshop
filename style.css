@@ -1,3 +1,7 @@
+.nav-item:last-child .nav-link{
+    display: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
