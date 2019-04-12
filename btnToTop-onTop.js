@@ -1,10 +1,7 @@
-window.onscroll = function(){
+window.onload = function(){
     let btnToTop = document.querySelector('.fa-chevron-up');
-    
-    btnToTop.style.opacity = '0.9';
-    btnToTop.style.transition = '0.5s';
 
-    if (pageYOffset == 0 ){ 
+    if ((clientX,clientY) == 0 && (pageX,pageY) == 0){
         btnToTop.style.opacity = '0';
         btnToTop.style.transition = '0.5s';
     }
