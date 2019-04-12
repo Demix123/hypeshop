@@ -2355,3 +2355,7 @@ footer .bottom .copyright .counter{
     align-items: center;
     margin-right: 60px !important;
 }
+
+.bph .sp-slide{
+    max-width: 700px;
+}
